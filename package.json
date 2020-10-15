@@ -30,7 +30,6 @@
     "image-webpack-loader": "^7.0.1",
     "mini-css-extract-plugin": "^1.0.0",
     "node-sass": "^4.14.1",
-    "normalize.css": "^8.0.1",
     "sass-loader": "^10.0.3",
     "style-loader": "^2.0.0",
     "webpack": "^4.44.2",

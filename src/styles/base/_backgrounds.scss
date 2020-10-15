@@ -1,0 +1,19 @@
+.bg-top {
+  background-image: linear-gradient(
+      180deg,
+      transparent 20%,
+      rgba(1, 56, 84, 0.3) 25%,
+      rgba(1, 56, 84, 0.9) 33%,
+      rgba(0, 34, 51, 0.95) 100%
+    ),
+    url("../assets/bg-graphics/bg-lines.png"),
+    url("../assets/header/header-overlay.png"),
+    url("../assets/backgrounds/bg-top.png");
+  background-repeat: no-repeat;
+  background-position: bottom, 50% 160%, top, top;
+  background-size: 100% 100%, 120% 85%, 100% 100%, contain;
+}
+
+//if 0deg then its straight up, 180 deg is straight down
+
+

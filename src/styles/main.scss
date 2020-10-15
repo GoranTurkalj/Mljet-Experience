@@ -8,6 +8,18 @@
 @import "./base/base";
 @import "./base/typography";
 
+//Import backgrounds
+@import "./base/backgrounds";
+
 //Import layouts
+@import "./layout/header";
+@import "./layout/hero-section";
+@import "./layout//news-section";
+@import "./layout/banner-section"; 
+@import "./layout/footer";
+
 
 //Import components
+@import "./components/logos";
+@import "./components/navbar";
+@import "./components/social-media"; 

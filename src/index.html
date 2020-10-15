@@ -4,71 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mljet Experience Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="bg-top">
     <!--HEADER-->
-    <header class="green">
+    <header class="header">
       <a href="#">
-        <img src="./assets/logos/mljet-logo.svg" alt="" />
+        <img class="logo" src="./assets/logos/mljet-logo.svg" alt="" />
       </a>
-      <nav>
-        <ul>
-          <li>
-            ZANIMLJIVOSTI
-            <ul>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li><div class="navlink-control"><a href="#" class="navlink">ZANIMLJIVOSTI</a><img class="arrow" src="./assets/header/down-arrow.svg" alt="dropdown menu arrow"></div>
+            <ul hidden>
               <li><a href="#">Gdje jesti?</a></li>
               <li><a href="#">Gdje odsjesti?</a></li>
               <li><a href="#">Zabava</a></li>
             </ul>
           </li>
-          <li>KAKO DO MLJETA</li>
-          <li><button>EN</button></li>
+          <li><a href="#" class="navlink">KAKO DO MLJETA</a></li>
+          <li><button class="navlink navlink--lang">EN</button></li>
         </ul>
       </nav>
     </header>
-
     <!--MAIN CONTENT-->
-    <main>
       <!--HERO TITLE AND CATEGORY SECTION-->
-      <section>
-        <div>
-          <h1>Get Ready Fast For Fall Leaf Viewing Trips</h1>
-          <p>
+      <section class="hero-section">
+        <div class="hero">
+          <h1 class="hero__title">Get Ready Fast For Fall Leaf Viewing Trips</h1>
+          <p class="hero__text">
             Buying the right telescope to take your love of astronomy to the
             next level is a big next step in the development of your passion for
             the stars. In many ways, it is ...
           </p>
         </div>
         <!--Categories-->
-        <div>
-          <a href="#"
-            ><div>
-              <img
-                src="./assets/categories/where-to-eat.png"
-                alt="Where to eat"
-              />
+        <div class="categories">
+          <a class="category" href="#"
+            ><div class="category__image">
             </div>
-            <h2>Where to eat</h2>
+            <h2 class="category__title">Where to eat</h2>
           </a>
-          <a href="#"
-            ><div>
-              <img
-                src="./assets/categories/where-to-stay.png"
-                alt="Where to stay"
-              />
+          <a class="category" href="#"
+            ><div class="category__image">
             </div>
-            <h2>Where to stay</h2>
+            <h2 class="category__title">Where to stay</h2>
           </a>
-          <a href="#"
-            ><div>
-              <img src="./assets/categories/amusement.png" alt="Amusement" />
+          <a class="category" href="#"
+            ><div class="category__image">
             </div>
-            <h2>Amusement</h2></a
+            <h2 class="category__title">Amusement</h2></a
           >
         </div>
       </section>
       <!--NEWS SECTION-->
-      <section>
+      <section class="news-section">
         <h2 class="hide-element">News</h2>
         <!--Featured news article-->
         <article>
@@ -145,6 +135,7 @@
           </div>
         </article>
       </section>
+    </div>
       <!--ABOUT MLJET SECTION-->
       <section>
         <div>
@@ -181,7 +172,7 @@
         <div>SLIDER JAVASCRIPT</div>
       </section>
       <!--BOTTOM BANNER SECTION-->
-      <section>
+      <section class="banner-section">
         <div>
           <h2>
             “ Travel makes one modest. You see what a tiny place you occupy in
@@ -190,9 +181,6 @@
           <p>Gustav Flaubert</p>
         </div>
         <img src="./assets/banners/banner.png" alt="Pine Tree Sponsor Banner" />
-      </section>
-      <!--HOW TO REACH MLJETT SECTION-->
-      <section>
         <div>
           <h2>How to reach Mljet</h2>
           <hr />
@@ -204,16 +192,15 @@
           <a href="#">FIND OUT</a>
         </div>
       </section>
-    </main>
-
     <!--FOOTER-->
-    <footer>
-      <div>
+    <footer class="footer">
+      <a href="#">
         <img
+          class="logo--small"
           src="./assets/logos/mljet-logo.svg"
           alt="Mljet Experience footer logo"
         />
-      </div>
+      <a>
       <address>
         <span
           >Saplunara 17,<br />
@@ -231,22 +218,24 @@
           >
         </span>
       </address>
-      <ul>
+      <ul class="social">
         <li>
           <a href="#"
             ><img
+              class="social__icon" 
               src="./assets/logos/instagram.svg"
               alt="Social Media Instagram"
           /></a>
         </li>
         <li>
           <a href="#"
-            ><img src="./assets/logos/facebook.svg" alt="Social Media Facebook"
+            ><img class="social__icon" src="./assets/logos/facebook.svg" alt="Social Media Facebook"
           /></a>
         </li>
         <li>
           <a href="#"
             ><img
+              class="social__icon"
               src="./assets/logos/tripadvisor.svg"
               alt="Social Media TripAdvisor"
           /></a>
