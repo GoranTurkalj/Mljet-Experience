@@ -3,8 +3,6 @@
 $ffText: "Nunito Sans", sans-serif;
 $ffHeading: "Playfair Display", serif;
 
-
-
 /************************ Font weights **************************/
 
 $txtLight: 300;
@@ -12,14 +10,16 @@ $txtRegular: 400;
 $txtSemiBold: 600;
 $headBold: 700;
 
-
- 
 //******************** Font colors  ******************************/
 
 $darkTxt: #363434; //Refers to most text, no titles
-$heroColor: #faf8f2; //Refers only to hero title and sub text
+$heroColor: #faf8f2; //Refers only to hero title 
+$heroPaleColor: #faf8f2be; //Refers to hero text below title
 $linkColor: #ffffff;
-$greyHeading: #717171; //Refers to every heading except h1 hero and "How to reach Mljet" above the footer.
+$greyHeading: #717171; //Refers to every heading except h1 hero and "How to reach Mljet" above the footer
+$reachHeading: #363434bf; //How to reach Mljet heading
+$tinyTxtColor: #717171; //Footer legal text
+$quoteTxtColor: #36343440;
 
 
 
@@ -27,12 +27,11 @@ $greyHeading: #717171; //Refers to every heading except h1 hero and "How to reac
 
 $lhHero: 6rem; //96px;
 $lhHeaderLinks: 1.375rem; // 22px originalno - only navbar links and dropdown menu links
-$lhTxt: 1.4375rem; //Originalno je 23px(?), refers to all text, including hero sub text
-$lhTinyTxt: 1.0625rem; //Originalno je 17px(?) Refers to dates and location in news posts, and footer text
+$lhTxt: 1.875rem; //Originalno je 23px(?), stavljeno na 30px jer ne odgovara razmaku sa slike, refers to all text, including hero sub text
+$lhTinyTxt: 24px; //Originalno je 17px(?) Refers to dates and location in news posts, and footer text
 $lhSmallHeadings: 1.875rem; //30px, za headinge u categories i u news (osim featured headinga)
 $lhMediumHeadings: 3.375rem; //54px, Featured News Heading, About Mljet, Beautifes of Mljet, How to Reach Mljet
 $lhQuote: 4.5rem; //72px, za citat
-
 
 
 /******************** Font sizes ********************************/
@@ -44,230 +43,3 @@ $fsTinyTxt: 0.875rem; //14px, only dates and location in news posts, and footer 
 $fsSmallHeadings: 1.5625rem; //25px;
 $fsMediumHeadings: 2.8125rem; // 45px, Featured News Heading, About Mljet, Beautifes of Mljet, How to Reach Mljet
 $fsQuote: 3.75rem; //60px, samo za citat
-
-
-
-
-/*
-.zanimljivosti {
-  color: #ffffff;
-  font-family: NunitoSans; //regular
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-}
-
-.gdje-jesti {
-  color: #363434;
-  font-family: NunitoSans; //regular
-  font-size: 18px;
-  line-height: 22px;
-  width: 97px;
-  text-align: left;
-}
-
-.h-1-title {
-  color: #faf8f2;
-  font-family: PlayfairDisplay; //Bold
-  font-size: 79.73px;
-  line-height: 96px;
-  width: 952px;
-  text-align: center;
-}
-
-.sub-text {
-  color: #faf8f2;
-  font-family: NunitoSans; //Light
-  font-size: 18.94px;
-  line-height: 23px;
-  width: 625px;
-  text-align: center;
-}
-
-.h-5-title {
-  color: #ffffff;
-  font-family: PlayfairDisplay; //Bold
-  font-size: 25.25px;
-  line-height: 30px;
-  text-align: left;
-}
-
-//Na news postovima
-
-.date {
-  color: #363434;
-  font-family: NunitoSans; //Semi bold
-  font-size: 14.21px;
-  line-height: 17px;
-  opacity: 0.5;
-  text-align: left;
-}
-
-.categorie {
-  color: #363434;
-  font-family: NunitoSans; //Semi bold
-  font-size: 14.21px;
-  line-height: 17px;
-  opacity: 0.5;
-  text-align: left;
-}
-
-//Veliki blog post naslov
-.h-3-title {
-  color: #717171;
-  font-family: PlayfairDisplay; //Bold
-  font-size: 44.87px;
-  line-height: 54px;
-  width: 409px;
-  text-align: left;
-}
-
-//Text u velikom blog postu
-.sub-text {
-  color: #363434;
-  font-family: NunitoSans; //Light
-  font-size: 18.94px;
-  line-height: 23px;
-  width: 407px;
-  text-align: left;
-}
-
-//Naslovi u malim news postovima jer tamo nema teskta
-
-.h-5-title {
-  color: #717171;
-  font-family: PlayfairDisplay; //Bold
-  font-size: 25.25px;
-  line-height: 30px;
-  width: 247px;
-  text-align: left;
-}
-
-//About Mljet i Beautifes of Mljet naslovi
-
-.h-3-title {
-  color: #717171;
-  font-family: PlayfairDisplay; //Bold
-  font-size: 44.87px;
-  line-height: 54px;
-  width: 952px;
-  text-align: left;
-}
-
-//Tekstovi za beuaties of mlejt i about mljet
-
-.sub-text {
-  color: #363434;
-  font-family: NunitoSans; //light
-  font-size: 18.94px;
-  line-height: 23px;
-  width: 650px;
-  text-align: left;
-}
-
-//Citat veliki
-
-.quote {
-  color: #363434;
-  font-family: PlayfairDisplay; //Bold
-  font-size: 59.81px;
-  line-height: 72px;
-  opacity: 0.25;
-  width: 1212px;
-  text-align: center;
-}
-
-//Za potpis autora nemam info
-
-//How to reach mljet naslov
-
-.title {
-  color: #363434;
-  font-family: PlayfairDisplay; //Bold
-  font-size: 44.87px;
-  line-height: 54px;
-  opacity: 0.75;
-  width: 628px;
-  text-align: center;
-}
-
-//How to reach mljet text
-.text {
-  color: #363434;
-  font-family: NunitoSans; //Light
-  font-size: 18.94px;
-  line-height: 23px;
-  width: 546px;
-  text-align: left;
-}
-
-//FIND OUT button
-
-.find-out {
-  color: #363434;
-  font-family: NunitoSans; //Regular
-  font-size: 18.94px;
-  line-height: 23px;
-  text-align: center;
-}
-
-//FOOTER
-
-//adresa
-.adresa {
-  color: #363434;
-  font-family: NunitoSans; //regular
-  font-size: 14.21px;
-  line-height: 17px;
-  text-align: right;
-}
-
-//ime apartmana
-
-.boutige-resort {
-  color: #363434;
-  font-family: NunitoSans; //Regular
-  font-size: 14.21px;
-  line-height: 17px;
-  text-align: center;
-}
-
-//tel
-
-.contact-info {
-  color: #363434;
-  font-family: NunitoSans; //Regular
-  font-size: 14.21px;
-  line-height: 17px;
-  text-align: left;
-}
-
-//Copyright text
-
-.copyright {
-  color: #717171;
-  font-family: NunitoSans; //Light
-  font-size: 14.21px;
-  line-height: 17px;
-  text-align: left;
-}
-
-//Privacy policy links
-.links {
-  color: #717171;
-  font-family: NunitoSans; //Light
-  font-size: 14.21px;
-  line-height: 17px;
-  text-align: center;
-}
-
-//Crafted by
-.crafted-by {
-  color: #717171;
-  font-family: NunitoSans; //Light
-  font-size: 14.21px;
-  line-height: 17px;
-  text-align: right;
-}
-
-*/

@@ -1,12 +1,12 @@
+//Import base
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/base";
+
 //Import utilities
 @import "./utilities/variables";
 @import "./utilities/mixins";
 @import "./utilities/helpers";
-
-//Import base
-@import "./base/reset";
-@import "./base/base";
-@import "./base/typography";
 
 //Import backgrounds
 @import "./base/backgrounds";
@@ -15,11 +15,14 @@
 @import "./layout/header";
 @import "./layout/hero-section";
 @import "./layout//news-section";
-@import "./layout/banner-section"; 
+@import "./layout/slider-section";
+@import "./layout/banner-section";
 @import "./layout/footer";
-
 
 //Import components
 @import "./components/logos";
 @import "./components/navbar";
-@import "./components/social-media"; 
+@import "./components/info-widget"; //About Mljet and Beauties of Mljet
+@import "./components/contact-info";
+@import "./components/social-media";
+@import "./components/legal-info";

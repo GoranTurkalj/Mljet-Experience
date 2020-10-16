@@ -1,7 +1,9 @@
 .footer {
-    height: 20.875rem; 
+  //  height: 20.875rem; 
+    padding-top: 2.25rem;
     background-color: #EEE5D6; 
     display: flex; 
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }

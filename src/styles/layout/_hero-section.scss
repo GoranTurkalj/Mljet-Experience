@@ -15,7 +15,6 @@
 
 .hero__title {
   max-width: 55.25rem; //900px
-  font-family: $ffHeading;
   color: $heroColor;
   font-size: $fsHero;
   line-height: $lhHero;
@@ -25,11 +24,8 @@
 
 .hero__text {
   max-width: 36.25rem; //580px
-  font-family: $ffText;
-  color: $heroColor;
-  font-size: $fsNormalTxt;
-  line-height: $lhTxt;
-  font-weight: $txtLight;
+  @include normalTextStyle(); 
+  color: $heroPaleColor;
   text-align: center;
   margin-bottom: 8.25rem;
 }
@@ -77,7 +73,6 @@
 
 .category__title {
   color: $linkColor;
-  font-family: $ffHeading;
   font-weight: $headBold;
   font-size: $fsSmallHeadings;
   line-height: $lhSmallHeadings;

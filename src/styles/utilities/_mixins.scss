@@ -1,0 +1,19 @@
+@mixin mediumHeadingStyle() {
+  font-size: $fsMediumHeadings;
+  line-height: $lhMediumHeadings;
+  color: $greyHeading;
+  font-weight: $headBold;
+}
+
+@mixin normalTextStyle() {
+  font-size: $fsNormalTxt;
+  line-height: $lhTxt;
+  color: $darkTxt;
+  font-weight: $txtLight;
+  text-align: left;
+}
+
+@mixin horizontalLine($lineWidth, $lineThickness) {
+  width: $lineWidth;
+  border-top: $lineThickness $hrBorderStyle; //thickness is custom, but the border is solid and predefined color
+}

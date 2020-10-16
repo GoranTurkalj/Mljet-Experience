@@ -1,0 +1,50 @@
+.contact {
+  width: 45rem; //720px
+  height: 3.75rem;
+  margin: 2.25rem 0 2rem 3.75rem; //3.75 slijeva, centrira da sve bude ispod Mljet loga
+  display: flex; 
+  justify-content: center;
+
+
+}
+
+.contact__segment {
+  height: 100%;
+  display: inline-block; 
+  font-style: normal;
+  font-size: $fsTinyTxt;
+  font-weight: $txtRegular;
+  line-height: $lhTinyTxt;
+  text-align: right; 
+  padding: 5px 0; 
+}
+
+
+.contact__segment--name {
+  text-align: center;
+  width: 21rem; 
+  margin: 0 2.25rem; 
+  border-left: 2px solid #3734347a; 
+  border-right: 2px solid #3734347a; 
+}
+
+.contact__segment--email {
+  text-align: left;
+}
+
+
+/*
+  <address class="contact">
+        <div class="contact__segment contact__segment--address">
+          <p>Saplunara 17,<br>Island Mljet, Croatia</p>
+        </div>
+        <div class="contact__segment">
+          <p>BOUTIQUE PINE TREE RESORT****<br>LUXURY APARMENTS & RESTAURANT</p>
+        </div>
+        <div class="contact__segment contact__segment--email">
+          <p>+385 99 591 00 24 <br> <a href="mailto:boutiquepinetree@gmail.com">boutiquepinetree@gmail.com</a></p>
+        </div>  
+      </address>
+
+
+*/
