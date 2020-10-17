@@ -1,0 +1,109 @@
+.news {
+  height: 100%;
+  margin-bottom: 2.25rem; //it's the same in desktop or mobile
+  display: flex;
+  flex-direction: column; //sve kartice su okomite po defaultu - zatim na mobile se za gornje tri upali flex klasa koja ih vrati na okomito jer one na desktopu moraju biti horizontalne.
+  justify-content: space-between;
+}
+
+//Refers only to single featured news post
+.news--featured {
+  flex-direction: row;
+
+  img {
+    height: 100%;
+    width: 62.8%;
+  }
+}
+
+//Refers to the second two articles
+.news--food {
+  width: 48.6%;
+  flex-direction: row;
+
+  img {
+    height: 100%;
+    width: 50%;
+  }
+
+  div {
+    width: 50%;
+  }
+}
+
+//Refers to last three news articles
+.news--stay {
+  width: 31.7%;
+
+  img {
+    height: 58.5%;
+    width: 100%;
+  }
+
+  div {
+    height: calc(100% - 58.5%);
+  }
+}
+
+//Individual tags in news component
+
+.news__img--featured {
+  width: 51rem;
+}
+
+.news__content {
+  background-color: $bgWhite;
+  padding: 2rem 2.25rem;
+}
+
+.news__header {
+  width: 13.375rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  span,
+  time {
+    color: $newsHeaderColor;
+    font-weight: $txtSemiBold;
+    line-height: $lhTinyTxt;
+    font-size: $fsTinyTxt;
+  }
+
+  &::after {
+    content: "";
+    width: 1px;
+    height: 18px;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translateY(-50%); //centering in combination with top
+    background-color: $newsHeaderColor; //Po dizajnu je  #717171 (greyHeading), ali ovako više liči na sliku.
+  }
+}
+
+.news__header--stay {
+  width: 14rem; //mrvicu dulji nego obična verzija
+  &::after {
+    left: 43%;
+  }
+}
+
+.news__title {
+  color: $greyHeading;
+  line-height: $lhNewsHeadings;
+  font-weight: $headBold;
+  font-size: $fsSmallHeadings;
+  margin-top: 0.8125rem;
+}
+
+.news__title--featured {
+  @include mediumHeadingStyle();
+  margin: 1.125rem 0 1.5rem 0;
+}
+
+.news__text {
+  @include normalTextStyle();
+}
+
+//**************************************  MEDIA QUERIES **************************************//

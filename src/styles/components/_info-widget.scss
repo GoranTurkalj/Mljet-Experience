@@ -1,22 +1,19 @@
-.info-widget {
-  background-color: lightgreen;
-}
 
 .info-widget__header {
-    display: flex;
-    align-items: center; 
-    background-color: gold; 
-    margin-bottom: 3.125rem;
+  display: flex;
+  align-items: center;
+  
+  margin-bottom: 3.125rem;
 }
 
 .info-widget__line {
-    @include horizontalLine(220px, 1px); 
-  
+  @include horizontalLine(260px, 1px);
+  margin-top: 1rem;
 }
 
 .info-widget__title {
   @include mediumHeadingStyle();
-  margin-left: 3.125rem; 
+  margin-left: 3.125rem;
 }
 
 .info-widget__text {

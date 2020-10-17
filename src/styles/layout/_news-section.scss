@@ -1,12 +1,26 @@
 .news-section {
-   // background-color: rgb(35, 124, 124); 
     width: 81.25rem; //1300px; 
     height: 81rem; //1296px;
     margin: 0 auto; 
-    border: 1px solid gold; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
-.news-section img {
-    width: 50px; 
-    height: 50px; 
+.news-section__featured {
+    height: 30.75rem; 
+    display: flex; 
 }
+.news-section__food {
+    height: 15rem; 
+    display: flex; 
+    justify-content: space-between;
+}
+.news-section__stay {
+    height: 30.75rem;
+    display: flex;  
+    justify-content: space-between;
+} 
+
+

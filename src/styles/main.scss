@@ -6,7 +6,6 @@
 //Import utilities
 @import "./utilities/variables";
 @import "./utilities/mixins";
-@import "./utilities/helpers";
 
 //Import backgrounds
 @import "./base/backgrounds";
@@ -15,14 +14,19 @@
 @import "./layout/header";
 @import "./layout/hero-section";
 @import "./layout//news-section";
-@import "./layout/slider-section";
+@import "./layout/video-section";
+@import "./layout/slider";
 @import "./layout/banner-section";
 @import "./layout/footer";
 
 //Import components
 @import "./components/logos";
 @import "./components/navbar";
+@import "./components/news";
 @import "./components/info-widget"; //About Mljet and Beauties of Mljet
 @import "./components/contact-info";
 @import "./components/social-media";
 @import "./components/legal-info";
+
+//Import Helpers
+@import "./utilities/helpers";

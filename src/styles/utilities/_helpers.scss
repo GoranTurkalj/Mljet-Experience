@@ -1,16 +1,12 @@
 .hide-element {
-    border: 0;
-    clip-path: inset(1px 1px 1px 1px); 
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip-path: inset(1px 1px 1px 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 
-//Vertical line
-.divider {
-    border-left: 1px solid black; 
-}

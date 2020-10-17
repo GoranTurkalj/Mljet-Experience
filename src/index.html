@@ -61,83 +61,87 @@
       <section class="news-section">
         <h2 class="hide-element">News</h2>
         <!--Featured news article-->
-        <article>
-          <div>
-            <img src="./assets/news/news-featured.png" alt="featured news" />
-          </div>
-          <div>
-            <div><span>18.03.2019</span><span>WHERE TO EAT</span></div>
-            <h2>Get Ready Fast For Fall Leaf restaurant Trips</h2>
-            <p>
-              Buying the right telescope to take your love of astronomy to the
-              next level is a big next step in the development of your passion
-              for the stars. In many ways, it is ...
-            </p>
-          </div>
-        </article>
+        <div class="news-section__featured">
+          <article class="news news--featured">
+               <img
+                src="./assets/news/news-featured.png" 
+                alt="featured news" />
+            <div class="news__content">
+              <p class="news__header"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO EAT</span></p>
+              <h2 class="news__title news__title--featured">Get Ready Fast For Fall Leaf restaurant Trips</h2>
+              <p class="news__text">
+                Buying the right telescope to take your love of astronomy to the
+                next level is a big next step in the development of your passion
+                for the stars. In many ways, it is ...
+              </p>
+            </div>
+          </article>
+        </div>
         <!--Where to eat articles-->
-        <article>
-          <div>
-            <img
-              src="./assets/news/best-food.png"
-              alt="best food restaurants"
+        <div class="news-section__food">
+          <article class="news news--food">
+            <img 
+                class="news__img"
+                src="./assets/news/best-food.png"
+                alt="best food restaurants"
             />
-          </div>
-          <div>
-            <div><span>18.03.2019</span><span>WHERE TO EAT</span></div>
-            <h3>Best food restaurants on Mljet</h3>
-          </div>
-        </article>
-        <article>
-          <div>
+            <div class="news__content">
+              <p class="news__header"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO EAT</span></p>
+              <h3 class="news__title">Best food restaurants on Mljet</h3>
+            </div>
+          </article>
+          <article class="news news--food"> 
             <img
-              src="./assets/news/best-fish.png"
-              alt="best fish restaurants"
+                class="news__img"
+                src="./assets/news/best-fish.png"
+                alt="best fish restaurants"
             />
-          </div>
-          <div>
-            <div><span>18.03.2019</span><span>WHERE TO EAT</span></div>
-            <h3>Best fish restaurants on island</h3>
-          </div>
-        </article>
-        <!--Where to stay  articles-->
-        <article>
-          <div>
-            <img src="./assets/news/turkey-gravy.png" alt="turkey gravy" />
-          </div>
-          <div>
-            <div><span>18.03.2019</span><span>WHERE TO STAY</span></div>
-            <h3>Turkey Gravy Secrets Revealed</h3>
-          </div>
-        </article>
-        <article>
-          <div>
+            <div class="news__content">
+              <p class="news__header"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO EAT</span></p>
+              <h3 class="news__title">Best fish restaurants on island</h3>
+            </div>
+          </article>
+        </div>
+        <!--Where to stay articles-->
+        <div class="news-section__stay">
+          <article class="news news--stay"> 
+            <img 
+              class="news__img"
+              src="./assets/news/turkey-gravy.png" 
+              alt="turkey gravy" 
+            />
+            <div class="news__content">
+              <p class="news__header news__header--stay"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO STAY</span></p>
+              <h3 class="news__title">Turkey Gravy Secrets Revealed</h3>
+            </div>
+          </article>
+          <article class="news news--stay">
             <img
+              class="news__img"
               src="./assets/news/barbecue-party.png"
               alt="barbecue party tips"
-            />
-          </div>
-          <div>
-            <div><span>18.03.2019</span><span>WHERE TO STAY</span></div>
-            <h3>Barbecue Party Tips For A Truly Amazing Event</h3>
-          </div>
-        </article>
-        <article>
-          <div>
+            /> 
+            <div class="news__content">
+              <p class="news__header news__header--stay"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO STAY</span></p>
+              <h3 class="news__title">Barbecue Party Tips For A Truly Amazing Event</h3>
+            </div>
+          </article>
+          <article class="news news--stay">
             <img
+              class="news__img"
               src="./assets/news/luxury-travel.png"
               alt="luxury travel charter"
             />
-          </div>
-          <div>
-            <div><span>18.03.2019</span><span>WHERE TO STAY</span></div>
-            <h3>The Luxury Of Traveling With Yacht Charter Companies</h3>
-          </div>
-        </article>
+            <div class="news__content">
+              <p class="news__header news__header--stay"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO STAY</span></p>
+              <h3 class="news__title">The Luxury Of Traveling With Yacht Charter Companies</h3>
+            </div>
+          </article>
+        </div>
       </section>
     </div>
-      <!--ABOUT MLJET SECTION-->
-      <section class="about-section">
+      <!--ABOUT MLJET SECTION WITH VIDEO PLAYER-->
+      <section class="video-section">
         <article class="info-widget">
            <div class="info-widget__header">
              <div class="info-widget__line"></div>
@@ -154,7 +158,7 @@
             </p>
         </article> 
       </section>
-      <!--BEAUTIES OF MLJET SECTION-->
+      <!--BEAUTIES OF MLJET SECTION WITH SLIDER-->
       <section>
         <article class="info-widget">
            <div class="info-widget__header">
@@ -166,7 +170,7 @@
             </p>
         </article> 
         <h3 class="hide-element">Image Slider</h3>
-        <div class="slider-section">SLIDER JAVASCRIPT</div>
+        <div class="slider">SLIDER JAVASCRIPT</div>
       </section>
       <!--BOTTOM BANNER SECTION-->
       <section class="banner-section">
