@@ -1,6 +1,6 @@
 //Div which contains iframe
 .video-player {
-  position: relative; 
+  position: relative;
   display: inline-block;
   margin-top: 3.75rem;
   margin-bottom: 4.1875rem;
@@ -16,8 +16,35 @@
 }
 
 .play-btn {
+  width: 9.125rem;
+  height: 9.1875rem;
   position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-image: url("../assets/video/play-button-arrowhead.svg"),
+    url("../assets/video/oval.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%, center;
+  background-size: 2.25rem, contain;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 250ms, box-shadow 150ms;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $videoBtnColor;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px 8px $videoBtnShadow; 
+  }
 }
+
+
+/*
+ return `https://www.youtube.com/embed/${this.getSelectedTitleVideos}?autoplay=1&modestbranding=1&rel=0&loop=1&playlist=${this.getSelectedTitleVideos}`;
+
+*/

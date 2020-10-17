@@ -1,2 +1,3 @@
-import "./styles/main.scss"; 
-   console.log("Hello from Webpack!")  ; 
+import "./styles/main.scss";
+import "./video";
+console.log("Hello from Webpack!");
