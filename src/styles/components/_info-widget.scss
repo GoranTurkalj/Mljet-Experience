@@ -1,8 +1,11 @@
+.info-widget {
+  width: 100%;  
+}
 
 .info-widget__header {
   display: flex;
   align-items: center;
-  
+
   margin-bottom: 3.125rem;
 }
 
@@ -18,7 +21,7 @@
 
 .info-widget__text {
   @include normalTextStyle();
-  width: 650px;
-  height: 252px;
-  margin-left: 458px;
+  width: 40.625rem;
+  height: min-content;
+  margin-left: 28.625rem;
 }

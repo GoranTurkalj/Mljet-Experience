@@ -10,4 +10,12 @@
     height: 2.625rem; 
     color: #3734344a;
     color: #ffffff00;
+    transition: transform 250ms ease-in;
+    &:hover {
+     transform: translateY(-3px);
+    }
+
+    &:active {
+     transform: translateY(-3px) scale(1.2);
+    }
 }

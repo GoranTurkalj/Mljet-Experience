@@ -1,0 +1,23 @@
+//Div which contains iframe
+.video-player {
+  position: relative; 
+  display: inline-block;
+  margin-top: 3.75rem;
+  margin-bottom: 4.1875rem;
+  background-color: rgba(55, 52, 52, 0.75);
+  background-image: url("../assets/video/video-bg.png");
+  background-repeat: no-repeat;
+  background-size: 150% 101%;
+  background-position: -23.75rem -0.25rem;
+  width: 98.375rem; //1574px;
+  height: 59rem;
+  border-radius: 3px;
+  background-blend-mode: multiply;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}

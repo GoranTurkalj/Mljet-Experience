@@ -1,33 +1,35 @@
 .legal {
   height: 3.75rem;
   width: 100%;
-  padding: 0 1.5rem; 
+  padding: 0 1.5rem;
   margin-top: 34px;
   border-top: 2px solid rgba(55, 52, 52, 0.29);
-  display: flex; 
+  display: flex;
   justify-content: space-between;
 
-
-  
+  a:hover,
+  a:active,
+  a:focus {
+    color: $darkTxt;
+  }
 }
 
 .legal__statement {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 33.33%;
-  
 
   font-size: $fsTinyTxt;
   line-height: $lhTinyTxt;
-  color: $tinyTxtColor; 
+  color: $tinyTxtColor;
 }
 
 .legal__statement--copyright {
- justify-content: flex-start;
- text-align: center;
+  justify-content: flex-start;
+  text-align: center;
 }
 
 .legal__statement--craft {
- justify-content: flex-end;
+  justify-content: flex-end;
 }
