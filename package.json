@@ -38,6 +38,6 @@
     "webpack-merge": "^5.2.0"
   },
   "dependencies": {
-    "glider-js": "^1.7.3"
+    "@glidejs/glide": "^3.4.1"
   }
 }

@@ -1,0 +1,45 @@
+
+.slide {
+  border: 1px solid blue;
+  margin-left: 2.25rem;
+  max-width: calc(909px + 1.5rem); 
+}
+
+.slide__figure {
+    height: 39.5rem; //this is also child img height
+   // width: calc(909px + 1.5rem); 
+   min-width: 48.59vw;
+      
+}
+
+.slide__img {
+  width: 97.43%;
+  height: 100%; 
+  border-radius: 2px;
+  float: right;
+}
+
+.slide__caption {
+  width: 15.75rem; 
+  height: 1.5rem;
+  padding-left: 0.25rem;
+  color: $reachHeading;
+  line-height: $lhTinyTxt;
+  font-size: $fsTinyTxt;
+  font-weight: $txtBold;
+  position: absolute;
+  transform-origin: left bottom;
+  transform: rotateZ(90deg) translateX(-1.5rem); 
+
+  
+}
+
+
+
+//****** EDITING GLIDE CLASSES *****//
+
+.glide {
+  border: 1px solid red; 
+  margin-top: 6rem; //moje
+}
+

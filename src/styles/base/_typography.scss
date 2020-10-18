@@ -8,6 +8,7 @@ $ffHeading: "Playfair Display", serif;
 $txtLight: 300;
 $txtRegular: 400;
 $txtSemiBold: 600;
+$txtBold: 700; //figcaptions
 $headBold: 700;
 
 //******************** Font colors  ******************************/
@@ -17,7 +18,7 @@ $heroColor: #faf8f2; //Refers only to hero title
 $heroPaleColor: #faf8f2be; //Refers to hero text below title
 $linkColor: #ffffff;
 $greyHeading: #717171; //Refers to every heading except h1 hero and "How to reach Mljet" above the footer
-$reachHeading: #363434bf; //How to reach Mljet heading
+$reachHeading: #363434bf; //How to reach Mljet heading and figcaption text
 $tinyTxtColor: #717171; //Footer legal text
 $quoteTxtColor: #36343440;
 $newsHeaderColor:#36343480; //In news header, 50% opacity
@@ -29,7 +30,7 @@ $newsHeaderColor:#36343480; //In news header, 50% opacity
 $lhHero: 6rem; //96px;
 $lhHeaderLinks: 1.375rem; // 22px originalno - only navbar links and dropdown menu links
 $lhTxt: 1.875rem; //Originalno je 23px(?), stavljeno na 30px jer ne odgovara razmaku sa slike, refers to all text, including hero sub text
-$lhTinyTxt: 1.5rem; //Originalno je 17px(?), stavljeno na 24px - Refers to dates and location in news posts, and footer text
+$lhTinyTxt: 1.5rem; //Originalno je 17px(?), stavljeno na 24px - Refers to dates and location in news posts, and footer text, also in figcaptions
 $lhSmallHeadings: 1.875rem; //30px, za headinge u categories 
 $lhNewsHeadings: 2.25rem; //Po dizajnu je 30px, ali ne odgovara vizualno, povećano na 36px.  Ne primjenjuje se na featured heading.
 $lhMediumHeadings: 3.375rem; //54px, Featured News Heading, About Mljet, Beautifes of Mljet, How to Reach Mljet
