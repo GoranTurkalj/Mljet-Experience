@@ -3,6 +3,10 @@
 @import "./base/typography";
 @import "./base/base";
 
+
+//Import vendors 
+@import "./vendors/vendors"; 
+
 //Import utilities
 @import "./utilities/variables";
 @import "./utilities/mixins";
@@ -15,7 +19,7 @@
 @import "./layout/hero-section";
 @import "./layout//news-section";
 @import "./layout/video-section";
-@import "./layout/slider";
+@import "./layout/slider-section";
 @import "./layout/banner-section";
 @import "./layout/footer";
 
@@ -25,6 +29,7 @@
 @import "./components/news";
 @import "./components/info-widget"; //About Mljet and Beauties of Mljet
 @import "./components/video-player"; //Iframe 
+@import "./components/slider"; //Glider slider 
 @import "./components/contact-info";
 @import "./components/social-media";
 @import "./components/legal-info";

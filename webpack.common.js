@@ -1,11 +1,11 @@
-const path = require("path");
+
 
 module.exports = {
   //GENERAL CONFIG XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-  entry: "./src/index.js",
-  output: {
-    filename: "main.[contentHash].js",
-    path: path.resolve(__dirname, "dist"),
+  entry: {
+    main: "./src/index.js",
+    vendor: "./src/vendor.js",
+    slider: "./src/slider.js"
   },
   //RULES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   module: {
