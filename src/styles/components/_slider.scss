@@ -1,26 +1,24 @@
-
-.slide {
-  border: 1px solid blue;
-  margin-left: 2.25rem;
-  max-width: calc(909px + 1.5rem); 
-}
-
+//This container needs to be 971px wide at 1920
 .slide__figure {
-    height: 39.5rem; //this is also child img height
-   // width: calc(909px + 1.5rem); 
-   min-width: 48.59vw;
-      
+  height: fit-content;
+  width: fit-content;
+  cursor: grab;
+  background-color: rgb(37, 161, 37);
+  text-align: right;
+  position: relative;
+  padding-left: 62px;
 }
 
 .slide__img {
-  width: 97.43%;
-  height: 100%; 
+  width: 100%;
+  max-height: 632px;
+  display: block; //fills bottom of container figure
   border-radius: 2px;
-  float: right;
+  object-fit: contain;
 }
 
 .slide__caption {
-  width: 15.75rem; 
+  width: 15.75rem;
   height: 1.5rem;
   padding-left: 0.25rem;
   color: $reachHeading;
@@ -29,17 +27,48 @@
   font-weight: $txtBold;
   position: absolute;
   transform-origin: left bottom;
-  transform: rotateZ(90deg) translateX(-1.5rem); 
-
-  
+  left: 4%;
+  transform: rotateZ(90deg) translateX(-1.5rem);
+  text-align: left;
+  transition: position 50ms;
 }
-
-
 
 //****** EDITING GLIDE CLASSES *****//
 
 .glide {
-  border: 1px solid red; 
-  margin-top: 6rem; //moje
+  border: 1px solid rgb(0, 17, 255);
+  margin-top: 6rem;
 }
 
+.glide__slide {
+  background-color: gold;
+}
+
+//*********** MEDIA QUERIES **********************//
+
+@media only screen and (max-width: $tabletMedium) {
+  .slide__caption {
+    left: 5%;
+  }
+}
+
+//at the moment Glide shows 1 slide only
+@media only screen and (max-width: $tabletSmall) {
+  .slide__figure {
+    text-align: center;
+    padding-left: 0;
+
+    //New styles
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .slide__caption {
+    position: block;
+    transform: rotateZ(0deg) translateX(0);
+    left: 0;
+    padding-left: 0;
+  }
+}

@@ -2,14 +2,33 @@
 import Glide from "@glidejs/glide";
 
 new Glide(".glide", {
-  type: "carousel",
-  startAt: 0,
-  perView: 1.75,
+  type: "slider",
+  rewind: true,
+  startAt: 1,
+  perView: 1.98,
   focusAt: "center",
-  gap: 36, 
-  animationDuration: 2000,
-  //peek - what the hell is that 
+  animationDuration: 1500,
+  gap: 0,
+  breakpoints: {
+    1920: {
+      perView: 1.98, 
+    }, 
+    1600: {
+      perView: 1.75
+    },
+    1300: {
+      perView: 1.5
+    }, 
+    1000: {
+      perView: 1.3
+    },
+    790: {
+      perView: 1
+    }
+  }
+  
  
+
 }).mount();
 
 console.log("Hello from slider.js");
