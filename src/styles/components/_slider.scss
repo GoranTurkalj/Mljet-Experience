@@ -3,15 +3,14 @@
   height: fit-content;
   width: fit-content;
   cursor: grab;
-  background-color: rgb(37, 161, 37);
   text-align: right;
   position: relative;
-  padding-left: 62px;
+  padding-left: 3.875rem;
 }
 
 .slide__img {
   width: 100%;
-  max-height: 632px;
+  max-height: 39.5rem;
   display: block; //fills bottom of container figure
   border-radius: 2px;
   object-fit: contain;
@@ -36,13 +35,10 @@
 //****** EDITING GLIDE CLASSES *****//
 
 .glide {
-  border: 1px solid rgb(0, 17, 255);
   margin-top: 6rem;
+  border: 1px solid blue; 
 }
 
-.glide__slide {
-  background-color: gold;
-}
 
 //*********** MEDIA QUERIES **********************//
 
@@ -57,18 +53,22 @@
   .slide__figure {
     text-align: center;
     padding-left: 0;
-
-    //New styles
-    height: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    border: 1px solid red;
+    max-height: 500px;
+  }
+
+  .slide__img {
+   margin-bottom: 1.5rem; 
   }
 
   .slide__caption {
     position: block;
+    width: 100%; 
     transform: rotateZ(0deg) translateX(0);
     left: 0;
     padding-left: 0;
+    text-align: center;
   }
 }
