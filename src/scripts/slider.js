@@ -1,3 +1,4 @@
+//Entry point
 //Using GlideJS Library
 import Glide from "@glidejs/glide";
 

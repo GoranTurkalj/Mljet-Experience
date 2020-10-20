@@ -3,9 +3,8 @@
 module.exports = {
   //GENERAL CONFIG XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   entry: {
-    main: "./src/index.js",
-    vendor: "./src/vendor.js",
-    slider: "./src/slider.js"
+    main: "./src/scripts/index.js",
+    slider: "./src/scripts/slider.js"
   },
   //RULES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   module: {

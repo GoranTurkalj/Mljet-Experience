@@ -131,14 +131,14 @@
 
 //*********** MEDIA QUERIES **********************//
 
-@media only screen and (max-width: $tabletMedium) {
+@media only screen and (max-width: $deskSmall) {
   .slide__caption {
     left: 5%;
   }
 }
 
 //at this moment Glide shows 1 slide only
-@media only screen and (max-width: $tabletSmall) {
+@media only screen and (max-width: $tablet) {
   .slide__figure {
     text-align: center;
     padding-left: 0;
@@ -157,6 +157,7 @@
     transform: rotateZ(0deg) translateX(0);
     left: 0;
     padding-left: 0;
+    padding-top: 0.5rem;
     text-align: center;
   }
 

@@ -1,0 +1,47 @@
+
+//This li element holds text, arrow, and dropdown menu
+.dropdown-container {
+  margin-right: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &:hover > ul {
+    max-height: 100%;
+  }
+}
+
+//Initially this element is not visible
+.dropdown-menu {
+  width: 10.9375rem;
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0.625rem;
+  background-color: $heroColor;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: all 250ms;
+  user-select: none;
+
+  & li:nth-of-type(2) {
+    border: 1px solid rgba(113, 113, 113, 0.12);
+  }
+}
+
+.dropdown-menu--expanded {
+  max-height: auto;
+}
+
+.dropdown__link {
+  display: block;
+  font-weight: $txtRegular;
+  font-size: $fsNavLinks;
+  line-height: 1.375rem; //22px
+  color: $darkTxt;
+  padding: 0.625rem 0.9375rem;
+  transition: all 150ms;
+  &:hover {
+    background-color: $hoverBgColor;
+    color: $heroColor;
+  }
+}
