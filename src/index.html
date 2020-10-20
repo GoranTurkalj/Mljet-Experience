@@ -13,7 +13,7 @@
       <a href="#">
         <img class="logo" src="./assets/logos/mljet-logo.svg" alt="" />
       </a>
-      <nav class="main-nav">
+      <nav id="main-nav" class="main-nav">
         <ul class="main-nav__list">
           <li class="dropdown-container arrow-control">
             <div id="dropdown-control" class="navlink-control"><a href="#" class="navlink">ZANIMLJIVOSTI</a><img class="arrow" src="./assets/header/down-arrow.svg" alt="dropdown menu arrow">
@@ -28,6 +28,7 @@
           <li><button class="navlink navlink--lang">EN</button></li>
         </ul>
       </nav>
+      <button id="hamburger" class="hamburger-menu"><img src="./assets/header/menu.svg" alt=""></button>
     </header>
     <!--MAIN CONTENT-->
       <!--HERO TITLE AND CATEGORY SECTION-->
@@ -159,10 +160,12 @@
               a destination.
             </p>
         </article>
-        <div class="video-player">
+        <div class="video-container">
+          <div class="video-player">
            <div id="player"></div>
           <button id="play-btn" class="play-btn"></button>
-        </div> 
+          </div> 
+        </div>
       </section>
       <!--BEAUTIES OF MLJET SECTION WITH SLIDER-->
       <section class="slider-section">

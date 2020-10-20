@@ -6,4 +6,13 @@
   display: flex;
   justify-content: space-between;
   border: 1px solid white;
+  position: relative; 
+}
+
+//***************  MEDIA QUERIES ****************** //
+
+@media only screen and (max-width: $tabletMedium) {
+  .header {
+    height: 8rem;
+  }
 }

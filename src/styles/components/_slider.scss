@@ -92,7 +92,7 @@
   cursor: pointer;
   transition: opacity 150ms ease, border 300ms ease-in-out;
   transform: translateY(-50%);
-  background-color: rgba(0, 34, 51, 0.6);
+  background-color: $darkBgClr;
   background-size: 60%;
   background-position: 45% 50%;
   background-repeat: no-repeat;
@@ -104,7 +104,7 @@
 }
 .glide__arrow:hover {
   border-color: white;
-  background-color:rgba(0, 34, 51, 0.9);
+  background-color: $darkestBgClr;
 
 }
 
