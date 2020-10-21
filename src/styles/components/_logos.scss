@@ -9,3 +9,10 @@
   height: 2.25rem;
   filter: contrast(60%);
 }
+
+@media only screen and (max-width: $tabletMedium) {
+  .logo {
+    width: clamp(calc(5rem + 0.5vw), 2vw, 6rem);
+    height: auto;
+  }
+}

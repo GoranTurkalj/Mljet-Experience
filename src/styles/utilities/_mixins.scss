@@ -13,6 +13,7 @@
   text-align: left;
 }
 
+//Line in info-widget component
 @mixin horizontalLine($lineWidth, $lineThickness) {
   width: $lineWidth;
   border-top: $lineThickness $hrBorderStyle; //thickness is custom, but the border is solid and predefined color

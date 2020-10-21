@@ -1,27 +1,55 @@
 .info-widget {
-  width: 100%;  
+  width: 100%;
 }
 
 .info-widget__header {
   display: flex;
   align-items: center;
-
   margin-bottom: 3.125rem;
 }
 
+//Line should be 260px(16.25rem) which is 13.54% of 1920
 .info-widget__line {
-  @include horizontalLine(260px, 1px);
+  @include horizontalLine(13.54%, 1px);
   margin-top: 1rem;
 }
 
 .info-widget__title {
   @include mediumHeadingStyle();
-  margin-left: 3.125rem;
+  margin-left: 2.6%; //2.6vw at 1920, 3.125rem, 50px
 }
 
 .info-widget__text {
   @include normalTextStyle();
-  width: 40.625rem;
+
+  min-width: 25%;
+  width: 40.625rem; //650px, 33.85%;
   height: min-content;
-  margin-left: 28.625rem;
+  margin-left: 23.85%; //28.625rem;  The size of the margin as a percentage, relative to the width of the containing block
+}
+
+@media only screen and (max-width: 60.625rem) {
+  .info-widget {
+    padding: 0 2rem;
+  }
+
+  .info-widget__header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  .info-widget__line {
+    width: 100%;
+  }
+
+  .info-widget__title {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .info-widget__text {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
