@@ -1,11 +1,11 @@
 // design width 1574px(98.375rem, height 945px (59rem)
 
-//Holds video-player and serves as a frame of sorts so that aspect-ratio can be kept on a smaller custom frame on a page, or entire screen
+//Holds video-player and serves as a frame of sorts so that aspect-ratio can be kept on a smaller custom frame on a page, or entire screen, depending on situation
 .video-container {
   margin-top: 3.75rem;
   margin-bottom: 4.1875rem;
-  width: 82%; // 1574px od 1920px
-  height: 87%; //945px od 1080px
+  width: 82%;
+  height: 59.0625rem; //945px;
 }
 
 .video-player {
@@ -15,15 +15,15 @@
   background-color: rgba(55, 52, 52, 0.75);
   background-image: url("../assets/video/video-bg.png");
   background-repeat: no-repeat;
-  background-size: 150% 101%;
-  background-position: -23.75rem -0.25rem;
+  background-size: cover;
+  background-position: center;
   border-radius: 3px;
   background-blend-mode: multiply;
 
   //Responsive and keeps aspect-ratio
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%;
+  padding-bottom: 56.25%; //no black lines witht htis ratio, 60.025% would fit perfectly but there are black lines.
 }
 
 .video-player iframe {
@@ -31,23 +31,28 @@
 }
 
 .play-btn {
-  width: 9.125rem;
-  height: 9.1875rem;
+  width: 9.28vw; //9.125rem;
+  height: 9.28vw;
+  max-width: 9.125rem;
+  max-height: 9.125rem;
+  min-width: 3.5rem;
+  min-height: 3.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 2px solid transparent;
   border-radius: 50%;
-  background-image: url("../assets/video/play-button.png"),
-    url("../assets/video/oval.png");
+  background-image: url("../assets/video/oval.png");
   background-repeat: no-repeat;
-  background-position: 50% 50%, center;
-  background-size: 2.25rem, contain;
+  background-position: center;
+  background-size: contain;
   cursor: pointer;
   outline: none;
   transition: border-color 250ms, box-shadow 150ms;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover,
   &:focus {
     border: 2px solid $videoBtnColor;
@@ -56,18 +61,25 @@
   &:active {
     box-shadow: 0 0 5px 8px $videoBtnShadow;
   }
+
+  //Play button image width and height are % of parent, and parent button is % of vw, limited to 9.125rem (146px design)
+  img {
+    width: 25.4%;
+    height: 25.4%;
+    margin-left: 5%; //visually looks "more" centered now
+  }
 }
 
 //********** MEDIA QUERIES **************//
 
+@media only screen and (max-width: $deskBig) {
+  .video-container {
+    height: 87%;
+  }
+}
+
 @media only screen and (max-width: $tabletMedium) {
   .video-container {
     width: 100%;
-  }
-
-  .play-btn {
-    width: 5rem;
-    height: 5rem;
-    background-size: 24%, contain;
   }
 }

@@ -2,7 +2,7 @@
   height: 3.75rem;
   width: 100%;
   padding: 0 1.5rem;
-  margin-top: 34px;
+  margin-top: 2.125rem;
   border-top: 2px solid rgba(55, 52, 52, 0.29);
   display: flex;
   justify-content: space-between;
@@ -32,4 +32,20 @@
 
 .legal__statement--craft {
   justify-content: flex-end;
+}
+
+@media only screen and (max-width: 66.875rem) {
+  .legal {
+    height: fit-content;
+    padding: 1.5rem 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 75%; 
+  }
+
+  .legal__statement {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 }

@@ -9,9 +9,10 @@
     url("../assets/bg-graphics/bitmap-pattern-left.png");
 
   background-repeat: no-repeat;
-  background-position: top, bottom, -12.8rem 59%;
-  background-size: 100% 80%, contain, 100% 40%;
+  background-position: top, bottom, 82.03% 50%, -12.8rem 59%;
+  background-size: 100% 80%, contain, 13.59vw, 100% 40%;
   background-blend-mode: multiply;
+  border: 1px solid red;
 }
 
 //Holds quote text and author name
@@ -25,6 +26,7 @@
   font-weight: $headBold;
   color: $quoteTxtColor;
   margin-bottom: 6.125rem;
+  border: 1px solid green;
 }
 
 .quote__text {
@@ -32,7 +34,8 @@
   font-size: $fsQuote;
   line-height: $lhQuote;
   text-align: center;
-  max-width: 1212px;
+  max-width: 75.75rem;
+  border: 1px solid purple;
 }
 
 .quote__author {
@@ -42,7 +45,7 @@
 
 //Actual banner
 .banner {
-  min-width: 75rem; //1200px;
+  width: 62.5%; //1200px;
 }
 
 //Destination container - how to reach Mljet segment
@@ -50,7 +53,7 @@
 .destination {
   height: 23.75rem;
   width: 39.25rem; //628px
-  padding: 0 41px;
+  padding: 0 2.5625rem; //41px
   margin-top: 9.625rem;
   margin-bottom: 39.125rem;
   display: flex;
@@ -65,7 +68,7 @@
 }
 
 .hr {
-  @include horizontalLine(178px, 1px);
+  @include horizontalLine(11.125rem, 1px);
 }
 
 .destination__description {
@@ -87,5 +90,37 @@
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.815);
+  }
+}
+
+@media only screen and (max-width: $tabletMedium) {
+  .destination {
+    width: 80%;
+    align-items: flex-start;
+  }
+
+  .destination__link {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: $mobileMedium) {
+  .destination {
+    height: fit-content;
+    width: 100%;
+    padding: 0 2rem;
+
+    & > * {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .hr {
+    width: 75%;
+  }
+  .destination__link {
+    width: 75%;
+    min-width: 8rem;
   }
 }
