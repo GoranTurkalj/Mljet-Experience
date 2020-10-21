@@ -2,16 +2,14 @@
   height: 100%;
   margin-bottom: 2.25rem; //it's the same in desktop or mobile
   display: flex;
-  flex-direction: column; //sve kartice su okomite po defaultu - zatim na mobile se za gornje tri upali flex klasa koja ih vrati na okomito jer one na desktopu moraju biti horizontalne.
+  flex-direction: column;
   justify-content: space-between;
 }
 
 //Refers only to single featured news post
 .news--featured {
   flex-direction: row;
-
   img {
-    height: 100%;
     width: 62.8%;
   }
 }
@@ -41,15 +39,11 @@
   }
 
   div {
-    height: calc(100% - 58.5%);
+    height: 41.5%;
   }
 }
 
 //Individual tags in news component
-
-.news__img--featured {
-  width: 51rem;
-}
 
 .news__content {
   background-color: $bgWhite;
@@ -107,3 +101,97 @@
 }
 
 //**************************************  MEDIA QUERIES **************************************//
+
+@media only screen and (max-width: $deskMedium) {
+  .news--featured,
+  .news--food,
+  .news--stay {
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .news__header {
+    width: fit-content;
+    justify-content: space-evenly;
+
+    time {
+      padding-right: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 78.75rem) {
+  .news--featured {
+    height: 25.5rem;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .news--food,
+  .news--stay {
+    width: 100%;
+    flex-direction: row;
+
+    img {
+      height: 17rem;
+    }
+
+    div {
+      height: 17rem;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .news--stay {
+    img {
+      width: 50%;
+    }
+
+    div {
+      width: 50%;
+    }
+  }
+}
+
+//1030px
+@media only screen and (max-width: 64.375rem) {
+  .news--featured,
+  .news--food,
+  .news--stay {
+    flex-direction: column;
+    height: fit-content;
+
+    img {
+      width: 100%;
+      height: 70%;
+    }
+
+    div {
+      width: 100%;
+      height: min-content;
+    }
+  }
+}
+
+//560px
+@media only screen and (max-width: $mobileMedium) {
+  .news__title--featured {
+    font-size: $fsSmallHeadings;
+    line-height: $lhNewsHeadings;
+  }
+}
+//375px
+@media only screen and (max-width: $mobileSmall) {
+  .news__content {
+    padding: 2rem 1.5rem;
+  }
+}
