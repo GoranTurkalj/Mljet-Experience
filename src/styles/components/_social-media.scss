@@ -1,35 +1,32 @@
-
 .social {
-    width: 12.125rem; 
-    display: flex; 
-    justify-content: space-between;
+  width: 12.125rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social__icon {
-    width: 2.625rem; 
-    height: 2.625rem; 
-    color: #3734344a;
-    color: #ffffff00;
-    transition: transform 250ms ease-in;
-    &:hover {
-     transform: translateY(-3px);
-    }
+  width: 2.625rem;
+  height: 2.625rem;
+  color: #3734344a;
+  color: #ffffff00;
+  transition: transform 250ms ease-in;
+  &:hover {
+    transform: translateY(-3px);
+  }
 
-    &:active {
-     transform: translateY(-3px) scale(1.2);
-    }
+  &:active {
+    transform: translateY(-3px) scale(1.2);
+  }
 }
 
 @media only screen and (max-width: $mobileSmall) {
-
-   .social {
-       width: 100%;
-       justify-content: center;
-       
-   }
-   .social__icon {
-       width: 2.25rem; 
-       height: 2.25rem;
-       margin: 0 0.5rem;  
-   }
+  .social {
+    width: 100%;
+    justify-content: center;
+  }
+  .social__icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin: 0 0.5rem;
+  }
 }

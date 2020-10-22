@@ -2,39 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.00, maximum-scale=1.00, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mljet Experience Homepage</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="bg-top">
-    <!--HEADER-->
-    <header class="header">
-      <a href="#">
-        <img class="logo" src="./assets/logos/mljet-logo.svg" alt="" />
-      </a>
-      <nav id="main-nav" class="main-nav">
-        <ul class="main-nav__list">
-          <li class="dropdown-container arrow-control">
-            <div id="dropdown-control" class="navlink-control"><a href="#" class="navlink">ZANIMLJIVOSTI</a><img class="arrow" src="./assets/header/down-arrow.svg" alt="dropdown menu arrow">
-            </div>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown__link" href="#">Gdje jesti?</a></li>
-              <li><a class="dropdown__link" href="#">Gdje odsjesti?</a></li>
-              <li><a class="dropdown__link" href="#">Zabava</a></li>
-            </ul>
-          </li>
-          <li><a href="#" class="navlink">KAKO DO MLJETA</a></li>
-          <li><button class="navlink navlink--lang">EN</button></li>
-        </ul>
-      </nav>
-      <button id="hamburger" class="hamburger-menu"><img src="./assets/header/menu.svg" alt=""></button>
-    </header>
-    <!--MAIN CONTENT-->
+      <!--HEADER-->
+      <header class="header">
+        <a href="#">
+          <img class="logo" src="./assets/logos/mljet-logo.svg" alt="" />
+        </a>
+        <nav id="main-nav" class="main-nav">
+          <ul class="main-nav__list">
+            <li class="dropdown-container arrow-control">
+              <div id="dropdown-control" class="navlink-control">
+                <a href="#" class="navlink">ZANIMLJIVOSTI</a
+                ><img
+                  class="arrow"
+                  src="./assets/header/down-arrow.svg"
+                  alt="dropdown menu arrow"
+                />
+              </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown__link" href="#">Gdje jesti?</a></li>
+                <li><a class="dropdown__link" href="#">Gdje odsjesti?</a></li>
+                <li><a class="dropdown__link" href="#">Zabava</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="navlink">KAKO DO MLJETA</a></li>
+            <li><button class="navlink navlink--lang">EN</button></li>
+          </ul>
+        </nav>
+        <button id="hamburger" class="hamburger-menu">
+          <img src="./assets/header/menu.svg" alt="" />
+        </button>
+      </header>
+      <!--MAIN CONTENT-->
       <!--HERO TITLE AND CATEGORY SECTION-->
       <section class="hero-section">
         <div class="hero">
-          <h1 class="hero__title">Get Ready Fast For Fall Leaf Viewing Trips</h1>
+          <h1 class="hero__title">
+            Get Ready Fast For Fall Leaf Viewing Trips
+          </h1>
           <p class="hero__text">
             Buying the right telescope to take your love of astronomy to the
             next level is a big next step in the development of your passion for
@@ -44,18 +57,15 @@
         <!--Categories-->
         <div class="categories">
           <a class="category" href="#"
-            ><div class="category__image">
-            </div>
+            ><div class="category__image"></div>
             <h2 class="category__title">Where to eat</h2>
           </a>
           <a class="category" href="#"
-            ><div class="category__image">
-            </div>
+            ><div class="category__image"></div>
             <h2 class="category__title">Where to stay</h2>
           </a>
           <a class="category" href="#"
-            ><div class="category__image">
-            </div>
+            ><div class="category__image"></div>
             <h2 class="category__title">Amusement</h2></a
           >
         </div>
@@ -66,12 +76,15 @@
         <!--Featured news article-->
         <div class="news-section__featured">
           <article class="news news--featured">
-               <img
-                src="./assets/news/news-featured.png" 
-                alt="featured news" />
+            <img src="./assets/news/news-featured.png" alt="featured news" />
             <div class="news__content">
-              <p class="news__header"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO EAT</span></p>
-              <h2 class="news__title news__title--featured">Get Ready Fast For Fall Leaf restaurant Trips</h2>
+              <p class="news__header">
+                <time datetime="2019-03-18">18. 03. 2019</time
+                ><span>WHERE TO EAT</span>
+              </p>
+              <h2 class="news__title news__title--featured">
+                Get Ready Fast For Fall Leaf restaurant Trips
+              </h2>
               <p class="news__text">
                 Buying the right telescope to take your love of astronomy to the
                 next level is a big next step in the development of your passion
@@ -83,35 +96,41 @@
         <!--Where to eat articles-->
         <div class="news-section__food">
           <article class="news news--food">
-            <img 
-                src="./assets/news/best-food.png"
-                alt="best food restaurants"
+            <img
+              src="./assets/news/best-food.png"
+              alt="best food restaurants"
             />
             <div class="news__content">
-              <p class="news__header"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO EAT</span></p>
+              <p class="news__header">
+                <time datetime="2019-03-18">18. 03. 2019</time
+                ><span>WHERE TO EAT</span>
+              </p>
               <h3 class="news__title">Best food restaurants on Mljet</h3>
             </div>
           </article>
-          <article class="news news--food"> 
+          <article class="news news--food">
             <img
-                src="./assets/news/best-fish.png"
-                alt="best fish restaurants"
+              src="./assets/news/best-fish.png"
+              alt="best fish restaurants"
             />
             <div class="news__content">
-              <p class="news__header"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO EAT</span></p>
+              <p class="news__header">
+                <time datetime="2019-03-18">18. 03. 2019</time
+                ><span>WHERE TO EAT</span>
+              </p>
               <h3 class="news__title">Best fish restaurants on island</h3>
             </div>
           </article>
         </div>
         <!--Where to stay articles-->
         <div class="news-section__stay">
-          <article class="news news--stay"> 
-            <img 
-              src="./assets/news/turkey-gravy.png" 
-              alt="turkey gravy" 
-            />
+          <article class="news news--stay">
+            <img src="./assets/news/turkey-gravy.png" alt="turkey gravy" />
             <div class="news__content">
-              <p class="news__header news__header--stay"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO STAY</span></p>
+              <p class="news__header news__header--stay">
+                <time datetime="2019-03-18">18. 03. 2019</time
+                ><span>WHERE TO STAY</span>
+              </p>
               <h3 class="news__title">Turkey Gravy Secrets Revealed</h3>
             </div>
           </article>
@@ -119,10 +138,15 @@
             <img
               src="./assets/news/barbecue-party.png"
               alt="barbecue party tips"
-            /> 
+            />
             <div class="news__content">
-              <p class="news__header news__header--stay"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO STAY</span></p>
-              <h3 class="news__title">Barbecue Party Tips For A Truly Amazing Event</h3>
+              <p class="news__header news__header--stay">
+                <time datetime="2019-03-18">18. 03. 2019</time
+                ><span>WHERE TO STAY</span>
+              </p>
+              <h3 class="news__title">
+                Barbecue Party Tips For A Truly Amazing Event
+              </h3>
             </div>
           </article>
           <article class="news news--stay">
@@ -131,158 +155,232 @@
               alt="luxury travel charter"
             />
             <div class="news__content">
-              <p class="news__header news__header--stay"><time datetime="2019-03-18">18. 03. 2019</time><span>WHERE TO STAY</span></p>
-              <h3 class="news__title">The Luxury Of Traveling With Yacht Charter Companies</h3>
+              <p class="news__header news__header--stay">
+                <time datetime="2019-03-18">18. 03. 2019</time
+                ><span>WHERE TO STAY</span>
+              </p>
+              <h3 class="news__title">
+                The Luxury Of Traveling With Yacht Charter Companies
+              </h3>
             </div>
           </article>
         </div>
       </section>
     </div>
-      <!--ABOUT MLJET SECTION WITH VIDEO PLAYER-->
-      <section class="video-section">
-        <article class="info-widget">
-           <div class="info-widget__header">
-             <div class="info-widget__line"></div>
-             <h2 class="info-widget__title">About Mljet</h2>
-            </div>
-            <p class="info-widget__text">
-              If you are an infrequent traveler you may need some tips to keep the
-              wife happy while you are jet setting around the globe. Many
-              individuals do not realize the tolls that traveling can have on
-              married life. Occasionally your travels are going to take you to a
-              location that your spouse would love to attend. You may be servicing
-              customers near your or your wifes childhood homes, you may be visiting
-              a destination.
-            </p>
-        </article>
-        <div class="video-container">
-          <div class="video-player">
-           <div id="player"></div>
-          <button id="play-btn" class="play-btn"><img src="./assets/video/play-button.png" alt="play video button icon"></button>
-          </div> 
+    <!--ABOUT MLJET SECTION WITH VIDEO PLAYER-->
+    <section class="video-section">
+      <h3 class="hide-element">Video Player</h3>
+      <article class="info-widget">
+        <div class="info-widget__header">
+          <div class="info-widget__line"></div>
+          <h2 class="info-widget__title">About Mljet</h2>
         </div>
-      </section>
-      <!--BEAUTIES OF MLJET SECTION WITH SLIDER-->
-      <section class="slider-section">
-        <article class="info-widget">
-           <div class="info-widget__header">
-            <div class="info-widget__line"></div>
-             <h2 class="info-widget__title">Beauties of Mljet</h2>
-            </div>
-            <p class="info-widget__text">
-              If you are an infrequent traveler you may need some tips to keep the wife happy while you are jet setting around the globe. Many individuals do not realize the tolls that traveling can have on married life. Occasionally your travels are going to take you to a location that your spouse would love to attend. You may be servicing customers near your or your wifes childhood homes, you may be visiting a destination that she has always desired to be at, she may simply want to spend some time with you.
-            </p>
-        </article> 
-         <!--GLIDE JS SLIDER-->
-        <h3 class="hide-element">Image Slider</h3>
-        <div class="glide">
-         <div class="glide__track" data-glide-el="track">
-           <ul class="glide__slides">
-             <li class="glide__slide">
-                <figure class="slide__figure">
-                  <figcaption class="slide__caption">Sea and sunshine on Mljet</figcaption>
-                  <img class="slide__img" src="./assets/slider/slider-gallery-1.jpg" alt="">
-                </figure>
-             </li>
-             <li class="glide__slide">
-                 <figure class="slide__figure">
-                   <figcaption class="slide__caption">Best hotels on island Mljet</figcaption>
-                  <img class="slide__img" src="./assets/slider/slider-gallery-2.jpg" alt="">
-                </figure>
-             </li>
-             <li class="glide__slide">
-                 <figure class="slide__figure">
-                  <figcaption class="slide__caption">Capt N Salsa Grill Roasted Yard Bird</figcaption>
-                  <img class="slide__img"src="./assets/slider/slider-gallery-3.jpg" alt="">
-                </figure>
-             </li>
-             <li class="glide__slide">
-                 <figure class="slide__figure">
-                  <figcaption class="slide__caption">Capt N Salsa Grill Cooked Bird Eggs</figcaption>
-                  <img class="slide__img"src="./assets/slider/slider-gallery-4.jpg" alt="">
-                </figure>
-             </li>
-             <li class="glide__slide">
-                <figure class="slide__figure">
-                  <figcaption class="slide__caption">Capt N Salsa Grill Roasted Chicken</figcaption>
-                  <img class="slide__img"src="./assets/slider/slider-gallery-5.jpg" alt="">
-                </figure>
-             </li>
-             <li class="glide__slide">
-                <figure class="slide__figure">
-                  <figcaption class="slide__caption">Capt N Salsa Grill Fried Seagulls</figcaption>
-                  <img class="slide__img"src="./assets/slider/slider-gallery-6.jpg" alt="">
-                </figure>
-             </li>
-           </ul>
-         </div>
-         <div class="glide__bullets" data-glide-el="controls[nav]">
-           <button class="glide__bullet" data-glide-dir="=0"></button>
-           <button class="glide__bullet" data-glide-dir="=1"></button>
-           <button class="glide__bullet" data-glide-dir="=2"></button>
-           <button class="glide__bullet" data-glide-dir="=3"></button>
-           <button class="glide__bullet" data-glide-dir="=4"></button>
-           <button class="glide__bullet" data-glide-dir="=5"></button>
-         </div>
-          <div class="glide__arrows" data-glide-el="controls">
-           <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
-           <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
-         </div>
+        <p class="info-widget__text">
+          If you are an infrequent traveler you may need some tips to keep the
+          wife happy while you are jet setting around the globe. Many
+          individuals do not realize the tolls that traveling can have on
+          married life. Occasionally your travels are going to take you to a
+          location that your spouse would love to attend. You may be servicing
+          customers near your or your wifes childhood homes, you may be visiting
+          a destination.
+        </p>
+      </article>
+      <div class="video-container">
+        <div class="video-player">
+          <div id="player"></div>
+          <button id="play-btn" class="play-btn">
+            <img
+              src="./assets/video/play-button.png"
+              alt="play video button icon"
+            />
+          </button>
         </div>
-      </section>
-      <!--BOTTOM BANNER SECTION-->
-      <section class="banner-section">
-        <div class="quote">
-          <h2 class="quote__text">
-            “ Travel makes one modest. You see what a tiny place you occupy in
-            the world. ”
-          </h2>
-          <p class="quote__author">Gustav Flaubert</p>
+      </div>
+    </section>
+    <!--BEAUTIES OF MLJET SECTION WITH SLIDER-->
+    <section class="slider-section">
+      <h3 class="hide-element">Beauties of Mljet and Image Slider</h3>
+      <article class="info-widget">
+        <div class="info-widget__header">
+          <div class="info-widget__line"></div>
+          <h2 class="info-widget__title">Beauties of Mljet</h2>
         </div>
-        <img class="banner" src="./assets/banners/banner.png" alt="Pine Tree Sponsor Banner" />
-        <div class="destination">
-          <h2 class="destination__title">How to reach Mljet</h2>
-          <hr class="hr" />
-          <p class="destination__description">
-            Buying the right telescope to take your love of astronomy to the
-            next level is a big next step in the development of your passion for
-            the stars. In many ways, it is ...
-          </p>
-          <a class="destination__link"  href="#">FIND OUT</a>
+        <p class="info-widget__text">
+          If you are an infrequent traveler you may need some tips to keep the
+          wife happy while you are jet setting around the globe. Many
+          individuals do not realize the tolls that traveling can have on
+          married life. Occasionally your travels are going to take you to a
+          location that your spouse would love to attend. You may be servicing
+          customers near your or your wifes childhood homes, you may be visiting
+          a destination that she has always desired to be at, she may simply
+          want to spend some time with you.
+        </p>
+      </article>
+      <!--GLIDE JS SLIDER-->
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <figure class="slide__figure">
+                <figcaption class="slide__caption">
+                  Sea and sunshine on Mljet
+                </figcaption>
+                <img
+                  class="slide__img"
+                  src="./assets/slider/slider-gallery-1.jpg"
+                  alt=""
+                />
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure class="slide__figure">
+                <figcaption class="slide__caption">
+                  Best hotels on island Mljet
+                </figcaption>
+                <img
+                  class="slide__img"
+                  src="./assets/slider/slider-gallery-2.jpg"
+                  alt=""
+                />
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure class="slide__figure">
+                <figcaption class="slide__caption">
+                  Capt N Salsa Grill Roasted Yard Bird
+                </figcaption>
+                <img
+                  class="slide__img"
+                  src="./assets/slider/slider-gallery-3.jpg"
+                  alt=""
+                />
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure class="slide__figure">
+                <figcaption class="slide__caption">
+                  Capt N Salsa Grill Cooked Bird Eggs
+                </figcaption>
+                <img
+                  class="slide__img"
+                  src="./assets/slider/slider-gallery-4.jpg"
+                  alt=""
+                />
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure class="slide__figure">
+                <figcaption class="slide__caption">
+                  Capt N Salsa Grill Roasted Chicken
+                </figcaption>
+                <img
+                  class="slide__img"
+                  src="./assets/slider/slider-gallery-5.jpg"
+                  alt=""
+                />
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure class="slide__figure">
+                <figcaption class="slide__caption">
+                  Capt N Salsa Grill Fried Seagulls
+                </figcaption>
+                <img
+                  class="slide__img"
+                  src="./assets/slider/slider-gallery-6.jpg"
+                  alt=""
+                />
+              </figure>
+            </li>
+          </ul>
         </div>
-      </section>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+          <button class="glide__bullet" data-glide-dir="=3"></button>
+          <button class="glide__bullet" data-glide-dir="=4"></button>
+          <button class="glide__bullet" data-glide-dir="=5"></button>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button
+            class="glide__arrow glide__arrow--left"
+            data-glide-dir="<"
+          ></button>
+          <button
+            class="glide__arrow glide__arrow--right"
+            data-glide-dir=">"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!--BOTTOM BANNER SECTION-->
+    <section class="banner-section">
+      <div class="quote">
+        <h2 class="quote__text">
+          “ Travel makes one modest. You see what a tiny place you occupy in the
+          world. ”
+        </h2>
+        <p class="quote__author">Gustav Flaubert</p>
+      </div>
+      <img
+        class="banner"
+        src="./assets/banners/banner.png"
+        alt="Pine Tree Sponsor Banner"
+      />
+      <div class="destination">
+        <h2 class="destination__title">How to reach Mljet</h2>
+        <hr class="hr" />
+        <p class="destination__description">
+          Buying the right telescope to take your love of astronomy to the next
+          level is a big next step in the development of your passion for the
+          stars. In many ways, it is ...
+        </p>
+        <a class="destination__link" href="#footer">FIND OUT</a>
+      </div>
+    </section>
     <!--FOOTER-->
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <a href="#">
         <img
           class="logo--small"
           src="./assets/logos/mljet-logo.svg"
           alt="Mljet Experience footer logo"
         />
-      <a>
-       <address class="contact">
+      </a>
+      <address class="contact">
         <div class="contact__segment">
-          <p>Saplunara 17,<br>Island Mljet, Croatia</p>
+          <p>Saplunara 17,<br />Island Mljet, Croatia</p>
         </div>
         <div class="contact__segment contact__segment--name">
-          <p>BOUTIQUE PINE TREE RESORT****<br>LUXURY APARMENTS & RESTAURANT</p>
+          <p>
+            BOUTIQUE PINE TREE RESORT****<br />LUXURY APARMENTS & RESTAURANT
+          </p>
         </div>
         <div class="contact__segment contact__segment--email">
-          <p>+385 99 591 00 24 <br> <a href="mailto:boutiquepinetree@gmail.com">boutiquepinetree@gmail.com</a></p>
-        </div>  
+          <p>
+            +385 99 591 00 24 <br />
+            <a href="mailto:boutiquepinetree@gmail.com"
+              >boutiquepinetree@gmail.com</a
+            >
+          </p>
+        </div>
       </address>
       <ul id="social" class="social">
         <li>
           <a href="#social"
             ><img
-              class="social__icon" 
+              class="social__icon"
               src="./assets/logos/instagram.svg"
               alt="Social Media Instagram"
           /></a>
         </li>
         <li>
           <a href="#social"
-            ><img class="social__icon" src="./assets/logos/facebook.svg" alt="Social Media Facebook"
+            ><img
+              class="social__icon"
+              src="./assets/logos/facebook.svg"
+              alt="Social Media Facebook"
           /></a>
         </li>
         <li>
@@ -295,10 +393,15 @@
         </li>
       </ul>
       <div class="legal">
-        <div class="legal__statement legal__statement--copyright">Copyright © 2019, BOUTIQUE PINE TREE RESORT****</div>
+        <div class="legal__statement legal__statement--copyright">
+          Copyright © 2019, BOUTIQUE PINE TREE RESORT****
+        </div>
         <div class="legal__statement">
-          <pre><a href="#">Cookie law</a> <span>|</span> <a href="#">Privacy policy</a></pre></div>
-        <div class="legal__statement legal__statement--craft">crafted by ICONIS</div>
+          <pre><a href="#">Cookie law</a> <span>|</span> <a href="#">Privacy policy</a></pre>
+        </div>
+        <div class="legal__statement legal__statement--craft">
+          crafted by ICONIS
+        </div>
       </div>
     </footer>
   </body>

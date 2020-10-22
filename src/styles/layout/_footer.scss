@@ -1,5 +1,4 @@
 .footer {
-  //  height: 20.875rem;
   padding-top: 2.25rem;
   background-color: #eee5d6;
   display: flex;
@@ -11,4 +10,15 @@
   background-size: 5.25rem 6.875rem;
   background-position: 50% 39%;
   background-blend-mode: soft-light;
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 0.875rem;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(250, 248, 242, 0.53);
+    top: 0;
+    transform: translateY(-100%);
+  }
 }

@@ -182,11 +182,18 @@
   }
 }
 
-//560px
+//560px - Redefining small headings font size  - does not affect category headings because its redefined below them.
+//Featured title is also getting small heading styling now.
 @media only screen and (max-width: $mobileMedium) {
+  $fsSmallHeadings: 1.2rem;
+
   .news__title--featured {
     font-size: $fsSmallHeadings;
     line-height: $lhNewsHeadings;
+  }
+
+  .news__title {
+    font-size: $fsSmallHeadings;
   }
 }
 //375px

@@ -53,3 +53,9 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: $mobileMedium) {
+  .info-widget__line {
+    border-color: transparent; //Looks nicer without the border at this point, the video-player scales margin-bottom and white space looks nicer now.
+  }
+}

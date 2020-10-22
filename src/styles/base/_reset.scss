@@ -11,13 +11,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   width: 100%;
   max-width: 120rem; //1920px
-  margin: 0 auto; 
+  margin: 0 auto;
   min-height: 100vh; //fills viewport even when empty
-  scroll-behavior: smooth;
 }
 
 ul {
