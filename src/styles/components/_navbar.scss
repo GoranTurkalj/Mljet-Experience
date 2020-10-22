@@ -19,12 +19,18 @@
   margin-right: 0;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 50%;
-  transition: all 250ms ease-in;
+  transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
 
-  &:hover,
+  &:hover {
+    background-color: $heroColor;
+    color: $darkestBgClr;
+  }
+
   &:active,
   &:focus {
-    background-color: rgba(255, 255, 255, 0.199);
+    background-color: $darkestBgClr;
+    color: $heroColor;
+    box-shadow: 0 0 3px 4px $videoBtnShadow;
   }
 }
 
@@ -35,14 +41,13 @@
   align-items: center;
 }
 
-
 //This class styles the arrow next to "Zanimljivosti"
 .arrow {
   width: 1.25rem;
   height: 0.625rem;
   margin-left: 0.2rem;
   transform-origin: center;
-  transition: all 250ms ease-in;
+  transition: all 450ms ease;
 }
 
 //This class is placed on the ancestor LI which also has dropdown-container class, so I can style arrow and dropdown-menu on hover, in different ways.
@@ -53,24 +58,55 @@
   }
 }
 
-
 //***************  MEDIA QUERIES ****************** //
 
 @media only screen and (max-width: $tabletMedium) {
-
   .main-nav {
     display: none;
   }
 
-  .main-nav--mobile {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.493);
+  .main-nav {
+    background-image: linear-gradient(
+        180deg,
+        rgb(0, 34, 51),
+        rgb(255, 255, 255)
+      ),
+      url("../assets/bg-graphics/bg-seafood.png");
+    background-repeat: no-repeat;
+    background-position: 100%, 10% 100%;
+    background-size: 100%, 110%;
+    background-blend-mode: darken;
     position: absolute;
     top: 8rem;
-
+    left: 0;
+    border-radius: 5vw 5vw 0 0;
     //The size of nav should be 100vh - 8rem;
     height: calc(100vh - 8rem);
-    min-width: 100vw;
+    width: 100%;
+    max-width: 100%;
   }
 
+  .main-nav--opened {
+    display: flex;
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: fit-content;
+    margin: 1.5rem 0;
+
+    & > li {
+      margin-top: 1.5rem;
+    }
+  }
+  .navlink-control:first-child {
+    margin-left: 1rem;
+  }
+
+  .navlink--lang {
+    margin: 0;
+  }
 }

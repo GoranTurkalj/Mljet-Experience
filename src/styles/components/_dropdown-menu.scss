@@ -1,4 +1,4 @@
-//This li element holds text, arrow, and dropdown menu
+//This li element holds text, arrow, and .dropdown menu
 .dropdown-container {
   margin-right: 3.5rem;
   display: flex;
@@ -6,7 +6,7 @@
   justify-content: flex-start;
   align-items: center;
   &:hover > ul {
-    max-height: 100%;
+    max-height: 100vh; //setting this value to an amount it will never reach ensures smooth transition of elements below the element which gets expanded
   }
 }
 
@@ -18,12 +18,13 @@
   margin-top: 0.625rem;
   background-color: $heroColor;
   border-radius: 3px;
-  overflow: hidden;
-  transition: all 250ms ease-in;
+  transition: all 500ms ease;
   user-select: none;
 
   & li:nth-of-type(2) {
     border: 1px solid rgba(113, 113, 113, 0.12);
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -38,5 +39,28 @@
   &:hover {
     background-color: $darkBgClr;
     color: $heroColor;
+  }
+}
+
+//***************  MEDIA QUERIES ****************** //
+
+@media only screen and (max-width: $tabletMedium) {
+  .dropdown-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    border-radius: 0 0 5vw 5vw;
+  }
+
+  .dropdown__link {
+    text-align: center;
+    color: $darkestBgClr;
+
+    &:hover {
+      background-color: $darkestBgClr;
+    }
   }
 }

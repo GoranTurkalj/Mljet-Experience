@@ -7,5 +7,6 @@ hamburgerBtn.addEventListener("click", mobileMenuHandler);
 
 function mobileMenuHandler(){
 
-   nav.classList.toggle("main-nav--mobile");
+   nav.classList.toggle("main-nav--opened");
+    
 }
