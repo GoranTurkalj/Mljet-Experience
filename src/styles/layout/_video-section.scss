@@ -13,3 +13,10 @@
   background-position: -17.5rem 85%;
   background-size: 155% 42%;
 }
+
+@media only screen and (max-width: $tabletMedium) {
+  .video-section {
+    background-position: 0% 0%;
+    background-size: contain, 100%;
+  }
+}

@@ -7,15 +7,16 @@
 .social__icon {
   width: 2.625rem;
   height: 2.625rem;
-  color: #3734344a;
-  color: #ffffff00;
-  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, box-shadow 250ms ease-in;
+  border-radius: 50%;
+
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.3);
   }
 
   &:active {
-    transform: translateY(-3px) scale(1.2);
+    transform: translateY(-4px) scale(1.2);
   }
 }
 

@@ -6,6 +6,9 @@ $hrBorderStyle: solid #37343480; //Use on horizontal lines
 $bgWhite: #faf8f2; //news articles
 $darkBgClr: rgba(0, 34, 51, 0.6); //Used on slider arrows and dropdown menu items
 $darkestBgClr: rgba(0, 34, 51, 0.9); //Used as hover on slider arrows
+$socialBgClr: #37343440; //Used directly in svg img for background, here only for reference
+$socialStrokeClr: #eee6d7ee; // This is footer background color on 93% opacity to aproximate stroke color for social icons since the svgs are not optimal, I cant use #ffffff at 25% opacity. This is just a reference - color is used directly in svg img code.
+
 
 //*******************  Button Colors *******************************//
 
@@ -13,3 +16,4 @@ $videoBtnColor: rgba(255, 255, 255, 0.7);
 $videoBtnShadow: rgba(255,255,255, 0.2);
 $bulletBtnClr: rgba(113, 113, 113, 0.25);
 $bulletBtnClrActive: #373434;
+

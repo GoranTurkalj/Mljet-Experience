@@ -24,6 +24,12 @@
   background-position: left top;
 }
 
+@media only screen and (max-width: $tabletMedium) {
+  .bg-middle {
+    background-image: none;
+  }
+}
+
 @media only screen and (max-width: $mobileMedium) {
   .bg-top {
     background-image: linear-gradient(
