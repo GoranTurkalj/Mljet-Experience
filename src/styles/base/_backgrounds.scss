@@ -17,6 +17,13 @@
 
 //if 0deg then its straight up, 180 deg is straight down
 
+.bg-middle {
+  background-image: linear-gradient(180deg, #f9f4e9, #f9f4e9);
+  background-repeat: no-repeat;
+  background-size: 68.28% 87.5%;
+  background-position: left top;
+}
+
 @media only screen and (max-width: $mobileMedium) {
   .bg-top {
     background-image: linear-gradient(
@@ -29,7 +36,7 @@
       url("../assets/bg-graphics/bg-lines.png"),
       url("../assets/header/header-overlay.png"),
       url("../assets/backgrounds/bg-top.png");
-   
+
     background-position: bottom, 50% 160%, top, top;
     background-size: 100% 100%, 120% 85%, 100% 100%, 180%;
   }

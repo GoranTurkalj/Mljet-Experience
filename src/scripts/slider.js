@@ -28,5 +28,3 @@ const glide = new Glide(".glide", {
     },
   },
 }).mount();
-
-
