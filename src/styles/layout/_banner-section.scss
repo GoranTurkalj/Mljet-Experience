@@ -2,16 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative; //because compass image is absolute
 
-  background-image: linear-gradient(180deg, rgb(255, 255, 255) 60%, transparent),
+  background-image: linear-gradient(
+      180deg,
+      rgb(255, 255, 255) 10%,
+      rgb(243, 244, 244) 25%,
+      rgba(175, 245, 230, 0) 70%
+    ),
     url("../assets/backgrounds/bg-bottom.png"),
-    url("../assets/bg-graphics/compass.svg"),
-    url("../assets/bg-graphics/bitmap-pattern-left.png");
+    url("../assets/bg-graphics/bitmap-pattern-left-optimized.png");
 
   background-repeat: no-repeat;
-  background-position: top, bottom, 82.03% 50%, -12.8rem 59%;
-  background-size: 100% 80%, contain, 13.59vw, 100% 40%;
-  background-blend-mode: multiply;
+  background-position: top, bottom, -12.8rem 59%;
+  background-size: 100% 100%, contain, 100% 40%;
+  background-blend-mode: saturation, multiply, normal;
 }
 
 //Holds quote text and author name
@@ -99,6 +104,29 @@
   }
 }
 
+.compass-img {
+  width: 13.59vw;
+  height: 13.59vw;
+  max-width: 16.3125rem;
+  max-height: 16.3125rem;
+  position: absolute; //this element is child of .quote but is absolutely positioned on .banner-section until mobile view, then it gets position static and comes as last child of parent .quote (and the parent gets scaling margin)
+  top: 43%;
+  left: 70%;
+  user-select: none;
+  animation: spinCompass 4s linear infinite;
+}
+
+@keyframes spinCompass {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+//***************  MEDIA QUERIES ****************** //
+
 @media only screen and (max-width: $deskBig) {
   .quote {
     font-size: clamp(1.5rem, 4vw, $fsQuote);
@@ -143,6 +171,9 @@
 }
 
 @media only screen and (max-width: $mobileMedium) {
+  .quote {
+    margin-bottom: 5.1%; //fixed margin no longer needed since compass is added
+  }
   .destination {
     width: 100%;
     padding: 0 2rem;
@@ -159,5 +190,14 @@
     height: 75vw;
     object-fit: cover;
     padding: 0;
+  }
+
+  .compass-img {
+    margin: 1.2rem 0;
+    width: 50%;
+    height: 50%;
+    max-width: 5rem;
+    max-height: 5rem;
+    position: static;
   }
 }
