@@ -9,7 +9,6 @@
   background-repeat: no-repeat;
   background-size: 5.25rem 6.875rem;
   background-position: 50% 39%;
-  background-blend-mode:  soft-light; //soft light je ok kad je sam pine logo
   position: relative;
 
   &::before {
@@ -20,5 +19,11 @@
     background-color: rgba(250, 248, 242, 0.53);
     top: 0;
     transform: translateY(-100%);
+  }
+}
+
+@media only screen and (max-width: $mobileMedium) {
+  .footer {
+    background-position: 50% 50%;
   }
 }
