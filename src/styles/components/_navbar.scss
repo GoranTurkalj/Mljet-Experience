@@ -4,9 +4,11 @@
 }
 
 .navlink {
+  position: relative;
   color: $linkColor;
   font-size: $fsNavLinks;
   line-height: $lhHeaderLinks;
+  border-bottom: 1px solid transparent;
   cursor: pointer;
   outline: none;
 }
@@ -26,10 +28,12 @@
     color: $darkestBgClr;
   }
 
-  &:active,
-  &:focus {
+  &:active {
     background-color: $darkestBgClr;
     color: $heroColor;
+  }
+
+  &:focus {
     box-shadow: 0 0 3px 4px $videoBtnShadow;
   }
 }

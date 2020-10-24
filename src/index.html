@@ -10,160 +10,170 @@
     />
   </head>
   <body>
-    <!--Wrapper for top background-->
-    <div class="bg-top">
-      <!--HEADER-->
-      <header class="header">
-        <a href="#">
-          <img class="logo" src="./assets/logos/mljet-logo.svg" alt="" />
-        </a>
-        <nav id="main-nav" class="main-nav">
-          <ul class="main-nav__list">
-            <li class="dropdown-container arrow-control">
-              <div id="dropdown-control" class="navlink-control">
-                <a href="#" class="navlink">ZANIMLJIVOSTI</a
-                ><img
-                  class="arrow"
-                  src="./assets/header/down-arrow.svg"
-                  alt="dropdown menu arrow"
-                />
-              </div>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown__link" href="#">Gdje jesti?</a></li>
-                <li><a class="dropdown__link" href="#">Gdje odsjesti?</a></li>
-                <li><a class="dropdown__link" href="#">Zabava</a></li>
-              </ul>
-            </li>
-            <li><a href="#" class="navlink">KAKO DO MLJETA</a></li>
-            <li><button class="navlink navlink--lang">EN</button></li>
-          </ul>
-        </nav>
-        <button id="hamburger" class="hamburger-menu">
-          <img src="./assets/header/menu.svg" alt="" />
-        </button>
-      </header>
-      <!--HERO TITLE AND CATEGORY SECTION-->
-      <section class="hero-section">
-        <div class="hero">
-          <h1 class="hero__title">
-            Get Ready Fast For Fall Leaf Viewing Trips
-          </h1>
-          <p class="hero__text">
-            Buying the right telescope to take your love of astronomy to the
-            next level is a big next step in the development of your passion for
-            the stars. In many ways, it is ...
-          </p>
-        </div>
-        <!--Categories-->
-        <div class="categories">
-          <a class="category" href="#"
-            ><div class="category__image"></div>
-            <h2 class="category__title">Where to eat</h2>
+    <!--Wrappers for top background-->
+    <div class="bg-top-lines">
+      <div class="bg-top">
+        <!--HEADER-->
+        <header class="header">
+          <a href="#">
+            <img class="logo" src="./assets/logos/mljet-logo.svg" alt="" />
           </a>
-          <a class="category" href="#"
-            ><div class="category__image"></div>
-            <h2 class="category__title">Where to stay</h2>
-          </a>
-          <a class="category" href="#"
-            ><div class="category__image"></div>
-            <h2 class="category__title">Amusement</h2></a
-          >
-        </div>
-      </section>
+          <nav id="main-nav" class="main-nav">
+            <ul class="main-nav__list">
+              <li class="dropdown-container arrow-control">
+                <div id="dropdown-control" class="navlink-control">
+                  <a href="#" class="navlink">ZANIMLJIVOSTI</a
+                  ><img
+                    class="arrow"
+                    src="./assets/header/down-arrow.svg"
+                    alt="dropdown menu arrow"
+                  />
+                </div>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown__link" href="#food">Gdje jesti?</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#slider-container"
+                      >Gdje odsjesti?</a
+                    >
+                  </li>
+                  <li><a class="dropdown__link" href="#player">Zabava</a></li>
+                </ul>
+              </li>
+              <li><a href="#reach-mljet" class="navlink">KAKO DO MLJETA</a></li>
+              <li><button class="navlink navlink--lang">EN</button></li>
+            </ul>
+          </nav>
+          <button id="hamburger" class="hamburger-menu">
+            <img src="./assets/header/menu.svg" alt="" />
+          </button>
+        </header>
+        <!--HERO TITLE AND CATEGORY SECTION-->
+        <section class="hero-section">
+          <div class="hero">
+            <h1 class="hero__title">
+              Get Ready Fast For Fall Leaf Viewing Trips
+            </h1>
+            <p class="hero__text">
+              Buying the right telescope to take your love of astronomy to the
+              next level is a big next step in the development of your passion
+              for the stars. In many ways, it is ...
+            </p>
+          </div>
+          <!--Categories-->
+          <div class="categories">
+            <a class="category" href="#food"
+              ><div class="category__image"></div>
+              <h2 class="category__title">Where to eat</h2>
+            </a>
+            <a class="category" href="#slider-container"
+              ><div class="category__image"></div>
+              <h2 class="category__title">Where to stay</h2>
+            </a>
+            <a class="category" href="#player"
+              ><div class="category__image"></div>
+              <h2 class="category__title">Amusement</h2></a
+            >
+          </div>
+        </section>
+      </div>
       <!--NEWS SECTION-->
       <section class="news-section">
         <h2 class="hide-element">News</h2>
-        <!--Featured news article-->
-        <div class="news-section__featured">
-          <article class="news news--featured">
-            <img src="./assets/news/news-featured.png" alt="featured news" />
-            <div class="news__content">
-              <p class="news__header">
-                <time datetime="2019-03-18">18. 03. 2019</time
-                ><span>WHERE TO EAT</span>
-              </p>
-              <h2 class="news__title news__title--featured">
-                Get Ready Fast For Fall Leaf restaurant Trips
-              </h2>
-              <p class="news__text">
-                Buying the right telescope to take your love of astronomy to the
-                next level is a big next step in the development of your passion
-                for the stars. In many ways, it is ...
-              </p>
-            </div>
-          </article>
-        </div>
-        <!--Where to eat articles-->
-        <div class="news-section__food">
-          <article class="news news--food">
-            <img
-              src="./assets/news/best-food.png"
-              alt="best food restaurants"
-            />
-            <div class="news__content">
-              <p class="news__header">
-                <time datetime="2019-03-18">18. 03. 2019</time
-                ><span>WHERE TO EAT</span>
-              </p>
-              <h3 class="news__title">Best food restaurants on Mljet</h3>
-            </div>
-          </article>
-          <article class="news news--food">
-            <img
-              src="./assets/news/best-fish.png"
-              alt="best fish restaurants"
-            />
-            <div class="news__content">
-              <p class="news__header">
-                <time datetime="2019-03-18">18. 03. 2019</time
-                ><span>WHERE TO EAT</span>
-              </p>
-              <h3 class="news__title">Best fish restaurants on island</h3>
-            </div>
-          </article>
-        </div>
-        <!--Where to stay articles-->
-        <div class="news-section__stay">
-          <article class="news news--stay">
-            <img src="./assets/news/turkey-gravy.png" alt="turkey gravy" />
-            <div class="news__content">
-              <p class="news__header news__header--stay">
-                <time datetime="2019-03-18">18. 03. 2019</time
-                ><span>WHERE TO STAY</span>
-              </p>
-              <h3 class="news__title">Turkey Gravy Secrets Revealed</h3>
-            </div>
-          </article>
-          <article class="news news--stay">
-            <img
-              src="./assets/news/barbecue-party.png"
-              alt="barbecue party tips"
-            />
-            <div class="news__content">
-              <p class="news__header news__header--stay">
-                <time datetime="2019-03-18">18. 03. 2019</time
-                ><span>WHERE TO STAY</span>
-              </p>
-              <h3 class="news__title">
-                Barbecue Party Tips For A Truly Amazing Event
-              </h3>
-            </div>
-          </article>
-          <article class="news news--stay">
-            <img
-              src="./assets/news/luxury-travel.png"
-              alt="luxury travel charter"
-            />
-            <div class="news__content">
-              <p class="news__header news__header--stay">
-                <time datetime="2019-03-18">18. 03. 2019</time
-                ><span>WHERE TO STAY</span>
-              </p>
-              <h3 class="news__title">
-                The Luxury Of Traveling With Yacht Charter Companies
-              </h3>
-            </div>
-          </article>
+        <div class="news-section__wrapper">
+          <!--Featured news article-->
+          <div class="news-section__featured">
+            <article class="news news--featured">
+              <img src="./assets/news/news-featured.png" alt="featured news" />
+              <div class="news__content">
+                <p class="news__header">
+                  <time datetime="2019-03-18">18. 03. 2019</time
+                  ><span>WHERE TO EAT</span>
+                </p>
+                <h2 class="news__title news__title--featured">
+                  Get Ready Fast For Fall Leaf restaurant Trips
+                </h2>
+                <p class="news__text">
+                  Buying the right telescope to take your love of astronomy to
+                  the next level is a big next step in the development of your
+                  passion for the stars. In many ways, it is ...
+                </p>
+              </div>
+            </article>
+          </div>
+          <!--Where to eat articles-->
+          <div class="news-section__food">
+            <article id="food" class="news news--food">
+              <img
+                src="./assets/news/best-food.png"
+                alt="best food restaurants"
+              />
+              <div class="news__content">
+                <p class="news__header">
+                  <time datetime="2019-03-18">18. 03. 2019</time
+                  ><span>WHERE TO EAT</span>
+                </p>
+                <h3 class="news__title">Best food restaurants on Mljet</h3>
+              </div>
+            </article>
+            <article class="news news--food">
+              <img
+                src="./assets/news/best-fish.png"
+                alt="best fish restaurants"
+              />
+              <div class="news__content">
+                <p class="news__header">
+                  <time datetime="2019-03-18">18. 03. 2019</time
+                  ><span>WHERE TO EAT</span>
+                </p>
+                <h3 class="news__title">Best fish restaurants on island</h3>
+              </div>
+            </article>
+          </div>
+          <!--Where to stay articles-->
+          <div class="news-section__stay">
+            <article class="news news--stay">
+              <img src="./assets/news/turkey-gravy.png" alt="turkey gravy" />
+              <div class="news__content">
+                <p class="news__header news__header--stay">
+                  <time datetime="2019-03-18">18. 03. 2019</time
+                  ><span>WHERE TO STAY</span>
+                </p>
+                <h3 class="news__title">Turkey Gravy Secrets Revealed</h3>
+              </div>
+            </article>
+            <article class="news news--stay">
+              <img
+                src="./assets/news/barbecue-party.png"
+                alt="barbecue party tips"
+              />
+              <div class="news__content">
+                <p class="news__header news__header--stay">
+                  <time datetime="2019-03-18">18. 03. 2019</time
+                  ><span>WHERE TO STAY</span>
+                </p>
+                <h3 class="news__title">
+                  Barbecue Party Tips For A Truly Amazing Event
+                </h3>
+              </div>
+            </article>
+            <article class="news news--stay">
+              <img
+                src="./assets/news/luxury-travel.png"
+                alt="luxury travel charter"
+              />
+              <div class="news__content">
+                <p class="news__header news__header--stay">
+                  <time datetime="2019-03-18">18. 03. 2019</time
+                  ><span>WHERE TO STAY</span>
+                </p>
+                <h3 class="news__title">
+                  The Luxury Of Traveling With Yacht Charter Companies
+                </h3>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </div>
@@ -326,10 +336,10 @@
         </h2>
         <p class="quote__author">Gustav Flaubert</p>
         <img
-            class="compass-img"
-            src="./assets/bg-graphics/compass.png"
-            alt="spinning compass image"
-          />
+          class="compass-img"
+          src="./assets/bg-graphics/compass.png"
+          alt="spinning compass image"
+        />
       </div>
       <img
         class="banner"
@@ -337,9 +347,7 @@
         alt="Pine Tree Sponsor Banner"
       />
       <div class="destination">
-        <h2 class="destination__title">
-          How to reach Mljet
-        </h2>
+        <h2 id="reach-mljet" class="destination__title">How to reach Mljet</h2>
         <hr class="hr" />
         <p class="destination__description">
           Buying the right telescope to take your love of astronomy to the next

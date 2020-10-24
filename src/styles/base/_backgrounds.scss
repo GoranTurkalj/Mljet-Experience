@@ -1,22 +1,25 @@
+
+
+.bg-top-lines {
+  background-image: url("../assets/bg-graphics/bg-lines-opaque.png"); 
+  background-repeat: no-repeat;
+  background-size: 120% 85%;
+  background-position: 50% 160%;
+  ;
+}
+
+//This wraps around header tag and hero-section tag
 .bg-top {
-  background-image: linear-gradient(
-      180deg,
-      transparent 20%,
-      rgba(1, 56, 84, 0.3) 25%,
-      rgba(1, 56, 84, 0.9) 33%,
-      rgba(0, 34, 51, 0.95) 100%
-    ),
-    url("../assets/bg-graphics/bg-lines.png"),
+background-image: 
+    linear-gradient(180deg, rgba(1, 56, 84, 0) 50%, #013854 73.78%, #002233 100%),
     url("../assets/header/header-overlay.png"),
     url("../assets/backgrounds/bg-top.png");
   background-repeat: no-repeat;
-  background-position: bottom, 50% 160%, top, top;
-  background-size: 100% 100%, 120% 85%, 100% 100%, contain;
-  padding-bottom: 4.5rem; //for the gap between news and About Mljet
+  background-position: bottom, top, 0% -8.875rem;
+  background-size:100% 100%, 100% 100%, cover;
 }
 
-//if 0deg then its straight up, 180 deg is straight down
-
+//linear-gradient(180deg, rgba(1, 56, 84, 0) 0%, #013854 16.78%, #002233 100%);
 .bg-middle {
   background-image: linear-gradient(180deg, #f9f4e9, #f9f4e9);
   background-repeat: no-repeat;
@@ -24,26 +27,29 @@
   background-position: left top;
 }
 
+//***************  MEDIA QUERIES ****************** //
+
+
+
 @media only screen and (max-width: $tabletMedium) {
   .bg-middle {
     background-image: none;
   }
 }
 
-@media only screen and (max-width: $mobileMedium) {
-  .bg-top {
-    background-image: linear-gradient(
-        180deg,
-        transparent 20%,
-        rgba(1, 56, 84, 0.3) 25%,
-        rgba(1, 56, 84, 0.9) 33%,
-        rgba(0, 34, 51, 0.95) 100%
-      ),
-      url("../assets/bg-graphics/bg-lines.png"),
-      url("../assets/header/header-overlay.png"),
-      url("../assets/backgrounds/bg-top.png");
 
-    background-position: bottom, 50% 160%, top, top;
-    background-size: 100% 100%, 120% 85%, 100% 100%, 180%;
-  }
-}
+
+
+
+
+/*
+
+ background-image: url("../assets/bg-graphics/bg-lines-opaque.png"),
+    linear-gradient(180deg, rgba(1, 56, 84, 0) 0%, #013854 16.78%, #002233 100%),
+    url("../assets/header/header-overlay.png"),
+    url("../assets/backgrounds/bg-top.png");
+
+
+
+
+*/
