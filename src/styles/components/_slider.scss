@@ -21,7 +21,7 @@
   height: 1.5rem;
   padding-left: 0.25rem;
   color: $reachHeading;
-  line-height: $lhTinyTxt;
+  line-height: $lhCaption;
   font-size: $fsTinyTxt;
   font-weight: $txtBold;
   position: absolute;
@@ -154,6 +154,7 @@
     padding-left: 0;
     padding-top: 0.5rem;
     text-align: center;
+   
   }
 
   .glide__arrow {

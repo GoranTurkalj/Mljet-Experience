@@ -33,7 +33,7 @@ $lhSmallHeadings: 1.875rem; //30px, za headinge u categories
 $lhNewsHeadings: 1.44em; // 2.25rem; //Po dizajnu je 30px, ali ne odgovara vizualno, povećano na 36px.  Ne primjenjuje se na featured heading osim u mobile view
 $lhMediumHeadings: 3.375rem; //54px, Featured News Heading, About Mljet, Beautifes of Mljet, How to Reach Mljet
 $lhQuote: 1.2em;
-
+$lhCaption: 1.0625rem; //17px
 
 /******************** Font sizes ********************************/
 
@@ -42,8 +42,9 @@ $fsNavLinks: 1.125rem; //18px, only refers to font in the main navbar
 $fsNormalTxt: 1.1875rem; //19px, only refers to paragraphs of text
 $fsTinyTxt: 0.875rem; //14px, only dates and location in news posts, and footer text
 $fsSmallHeadings: 1.5625rem; //25px, used on news headings and category headings
-$fsMediumHeadings: clamp(2.1rem, 3vw, 2.8125rem); // 45px, Featured News Heading, About Mljet, Beautifes of Mljet, How to Reach Mljet
+$fsMediumHeadings: clamp(
+  2.1rem,
+  3vw,
+  2.8125rem
+); // 45px, Featured News Heading, About Mljet, Beautifes of Mljet, How to Reach Mljet
 $fsQuote: 3.75rem; //60px, samo za citat, line-height je 1.2em (72px)
-
-
-

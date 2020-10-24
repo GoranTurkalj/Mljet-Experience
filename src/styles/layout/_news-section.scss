@@ -1,31 +1,23 @@
 .news-section {
-  background-image: linear-gradient(#002233, #002233);
-  background-repeat: no-repeat;
-  background-position:  bottom;
-  background-size:  100% 100%;
-  padding-bottom: 4.5rem; //for the gap between news and About Mljet
-
-}
-
-
-.news-section__wrapper {
-  width: 81.25rem; //1300px;
-  height: 81rem; //1296px;
+  width: 81.25rem;
+  min-height: 81rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
+  padding-bottom: 4.5rem;
 }
 
 .news-section__featured {
   height: 30.75rem;
   display: flex;
+  margin-bottom: 2.25rem;
 }
 .news-section__food {
   height: 15rem;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2.25rem;
 }
 .news-section__stay {
   height: 30.75rem;
@@ -36,26 +28,21 @@
 //**************************************  MEDIA QUERIES **************************************//
 
 @media only screen and (max-width: $deskMedium) {
-  .news-section__wrapper {
+  .news-section {
     width: 100%;
-    height: 86rem;
-    padding: 0 2rem;
-  }
-
-  .news-section__featured,
-  .news-section__food,
-  .news-section__stay {
-    height: fit-content;
-  }
-
-  .news-section__food {
-    margin: 2.25rem 0;
+    min-height: 86rem;
+    padding: 0 2rem 4.5rem 2rem;
   }
 }
 
+//1260px
 @media only screen and (max-width: 78.75rem) {
-  .news-section__wrapper {
+  .news-section {
     height: fit-content;
+
+    & > div {
+      height: min-content;
+    }
   }
 
   .news-section__food,
@@ -64,16 +51,25 @@
   }
 }
 
+//News section now recieves color used previoulsy on background image gradient in  .bg-top
+//Also gets the lines background image
+@media only screen and (max-width: 68.75rem) {
+  .news-section {
+    background-color: #002233;
+    background-image: url("../assets/bg-graphics/bg-lines-opaque.png");
+  }
+}
+
 //560px
 @media only screen and (max-width: $mobileMedium) {
-  .news-section__wrapper {
-    padding: 0 1rem;
+  .news-section {
+    padding: 0 1rem 4.5rem 1rem;
   }
 }
 
 //375px
 @media only screen and (max-width: $mobileSmall) {
-  .news-section__wrapper {
-    padding: 0;
+  .news-section {
+    padding: 0 0 4.5rem 0;
   }
 }

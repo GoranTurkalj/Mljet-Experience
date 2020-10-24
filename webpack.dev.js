@@ -11,9 +11,11 @@ module.exports = merge(common, {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
-  },
+  }, 
+  devtool: "inline-source-map",
   //RULES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   module: {
+   
     rules: [
       //Rules for assets
       {

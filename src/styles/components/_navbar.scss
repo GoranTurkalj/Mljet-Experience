@@ -70,30 +70,38 @@
   }
 
   .main-nav {
-    background-image: linear-gradient(
-        180deg,
-        rgb(0, 34, 51),
-        rgb(255, 255, 255)
-      ),
-      url("../assets/bg-graphics/bg-seafood.png");
+    background-image: url("../assets/bg-graphics/bg-seafood.png"),
+      linear-gradient(0deg, rgb(231, 240, 239) 30%, rgb(0, 34, 51));
     background-repeat: no-repeat;
-    background-position: 100%, 10% 100%;
-    background-size: 100%, 110%;
-    background-blend-mode: darken;
-    position: absolute;
+    background-position: 10% 100%, 100%;
+    background-size: 110%, 100%;
+    background-color: rgb(115, 148, 167);
+    background-blend-mode: multiply, soft-light;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
     top: 8rem;
     left: 0;
-    border-radius: 5vw 5vw 0 0;
-    //The size of nav should be 100vh - 8rem;
-    height: calc(100vh - 8rem);
+    border-radius: 70vw 70vw 0 0;
+    min-height: calc(100vh - 8rem);
+    max-height: calc(100vh - 8rem);
     width: 100%;
     max-width: 100%;
+    z-index: 10;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   .main-nav--opened {
     display: flex;
+    animation: mobileMenuOpen 500ms ease-in-out forwards;
   }
 
+  .main-nav--closed {
+    animation: mobileMenuClose 500ms ease-in-out forwards;
+  }
   .main-nav__list {
     flex-direction: column;
     align-items: center;
@@ -114,3 +122,55 @@
     margin: 0;
   }
 }
+
+@keyframes mobileMenuOpen {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    border-radius: 5vw 5vw 0 0;
+    opacity: 1;
+  }
+}
+@keyframes mobileMenuClose {
+  0% {
+    border-radius: 5vw 5vw 0 0;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+    border-radius: 70vw 70vw 0 0;
+  }
+}
+
+//  .main-nav {
+//     background-image: linear-gradient(
+//         180deg,
+//         rgb(0, 34, 51),
+//         rgb(255, 255, 255)
+//       ),
+//       url("../assets/bg-graphics/bg-seafood.png");
+//     background-repeat: no-repeat;
+//     background-position: 100%, 10% 100%;
+//     background-size: 100%, 110%;
+//     background-blend-mode: darken;
+//     position: fixed;
+//     overflow-y: scroll;
+//     overflow-x: hidden;
+//     top: 8rem;
+//     left: 0;
+//     border-radius: 5vw 5vw 0 0;
+//     min-height: calc(100vh - 8rem);
+//     max-height: calc(100vh - 8rem);
+//     width: 100%;
+//     max-width: 100%;
+//     z-index: 10;
+
+//     &::-webkit-scrollbar {
+//       display: none;
+//     }
+//   }

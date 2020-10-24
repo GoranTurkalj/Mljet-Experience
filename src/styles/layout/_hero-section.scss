@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 //Container for hero title and text
@@ -14,7 +13,7 @@
 }
 
 .hero__title {
-  max-width: 55.25rem; //900px
+  max-width: 55.25rem; 
   color: $heroColor;
   font-size: $fsHero;
   line-height: $lhHero;
@@ -30,13 +29,13 @@
   margin-bottom: 8.25rem;
 }
 
-//CATEGORIES XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//CATEGORIES 
 
 .categories {
   display: flex;
   width: 81.25rem; //1300px
   justify-content: space-between;
-  margin-bottom: 6.1875rem;
+  padding-bottom: 6.1875rem;
 }
 
 //Holds image and heading - this is an encompassing anchor tag
@@ -90,18 +89,14 @@
 }
 
 @media only screen and (max-width: $deskMedium) {
-
-
   .hero__title {
     max-width: 55%;
     line-height: clamp(1, 1.5, 2);
-
-
   }
 
   .categories {
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 2rem 6.1875rem 2rem;
   }
 
   .category {
@@ -116,6 +111,19 @@
   }
 }
 
+@media only screen and (max-width: 68.75rem) {
+  .categories {
+   background-image: url("../assets/bg-graphics/bg-lines-opaque.png"), linear-gradient(
+      180deg,
+      rgba(1, 56, 84, 0) 0%,
+      #013854 15.78%,
+      #002233 100%);
+    background-size: 100% 120%, 100%;
+    background-position: center, top;
+    background-repeat: repeat, no-repeat;
+  }
+}
+
 @media only screen and (max-width: 62.5rem) {
   .category__image {
     height: 10rem;
@@ -123,10 +131,22 @@
 }
 
 @media only screen and (max-width: $tabletMedium) {
+  .hero {
+    height: calc(100vh - 8rem);
+  }
+
+  .hero__text {
+    margin-bottom: 0;
+  }
+
+  //Remove gradient at this point and use just the darkest color as background-color with lines as bg image
   .categories {
     width: 100%;
     flex-direction: column;
     align-items: center;
+   
+    padding: 15rem 0 6.1875rem 0;
+   
   }
 
   .category {
@@ -178,7 +198,10 @@
   }
 
   .categories {
-    padding: 0 1rem;
+    padding: 15rem 1rem 6.1875rem 1rem;
+    background-size: 150% 110%, 100%;
+    background-position: 50% 0%, top;
+   
   }
 
   .category__image {
@@ -195,6 +218,6 @@
 
 @media only screen and (max-width: $mobileSmall) {
   .categories {
-    padding: 0;
+    padding: 15rem 0 6.1875rem 0;
   }
 }
