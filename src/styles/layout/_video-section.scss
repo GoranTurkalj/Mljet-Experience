@@ -2,14 +2,15 @@
   padding-top: 5.625%; //6.75rem; allows fluid scaling of distance between video and hero sections, as well as easy positioning of background in bg-middle
   @include flexColumnCenter(); 
   background-image: linear-gradient(
-      180deg,
+      to right,
       rgba(249, 244, 233, 0.87),
-      rgba(249, 244, 233, 0.7)
+      rgba(255, 255, 255, 0.87)
     ),
     url("../assets/bg-graphics/bg-seafood.png");
   background-repeat: no-repeat;
-  background-position: -17.5rem 85%;
-  background-size: 155% 42%;
+  background-position: -18.4rem 85%;
+  background-size: 157% 42%;
+  
 }
 
 @media only screen and (max-width: $tabletMedium) {
