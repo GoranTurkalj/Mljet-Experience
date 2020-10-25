@@ -1,6 +1,6 @@
 const path = require("path");
 const common = require("./webpack.common");
-const AppManifestWebpackPlugin = require('app-manifest-webpack-plugin') 
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const { merge } = require("webpack-merge");
 
 //Plugins
@@ -14,6 +14,7 @@ module.exports = merge(common, {
   output: {
     filename: "[name].[contentHash].bundle.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/Mljet-Experience/",
   },
   //RULES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   module: {
@@ -73,23 +74,23 @@ module.exports = merge(common, {
       template: "./src/index.html",
       minify: { removeAttributeQuotes: true },
     }),
-     new AppManifestWebpackPlugin({
-    logo: './my-logo.png',
-    inject: true,
-    config: {
-      appName: "Mljet Experience",
-      icons: {
-        android: false, 
-        appleIcon: false, 
-        coast: false, 
-        yandex: false, 
-        appleStartup: false, 
-        windows: false,
-        firefox: false,
-        favicons: true, 
-      }
-    }
-  }),
+    new FaviconsWebpackPlugin({
+      logo: "./logo.png",
+      cache: true,
+      inject: true,
+      favicons: {
+        icons: {
+          coast: false,
+          yandex: false,
+          android: false,
+          appleIcon: false,
+          appleStartup: false,
+          windows: true,
+          favicons: true,
+          firefox: true,
+        },
+      },
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }),
   ],
