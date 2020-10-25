@@ -1,10 +1,11 @@
-
+const webpack = require("webpack");
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
   //GENERAL CONFIG XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   entry: {
     main: "./src/scripts/index.js",
-    slider: "./src/scripts/slider.js"
+    slider: "./src/scripts/slider.js",
   },
   //RULES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   module: {
@@ -13,5 +14,11 @@ module.exports = {
       { test: /\.html$/, use: ["html-loader"] },
     ],
   },
-  //PLUGINS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [autoprefixer()],
+      },
+    }),
+  ],
 };
