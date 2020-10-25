@@ -9,7 +9,7 @@
   background-size: 120% 100%, 100% 80%, 100% 100%, contain;
 }
 
-//linear-gradient(180deg, rgba(1, 56, 84, 0) 0%, #013854 16.78%, #002233 100%);
+//this background image stretches from the About Mljet part all the way down to the slider
 .bg-middle {
   background-image: linear-gradient(180deg, #f9f4e9, #f9f4e9);
   background-repeat: no-repeat;
@@ -34,10 +34,9 @@
 //1030px
 @media only screen and (max-width: 64.375rem) {
   .bg-top {
-    //U ovom trenu maknuti lines i gradient s ovog elementa, gradient cijeli staviti na .categories te u sami .news-section (tamniju boju),  fotografiji promijeniti size
+    //U ovom trenu maknuti lines i gradient s ovog elementa, gradient cijeli staviti na .categories te u sami .news-section (tamniju boju), fotografiji promijeniti size
     background-image: url("../assets/header/header-overlay.png"),
       url("../assets/backgrounds/bg-top.png");
-
     background-position: top, left top;
     background-size: 100% 100%, auto 25%;
   }
@@ -48,6 +47,7 @@
     background-image: none;
   }
 }
+
 @media only screen and (max-width: $mobileMedium) {
   .bg-top {
     background-size: 100% 100%, auto 30%;

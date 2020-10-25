@@ -1,5 +1,6 @@
 //Selecting elements and control variable.
 const hamburgerBtn = document.getElementById("hamburger");
+const hamburgerSvg = document.getElementById("hamburger-svg");
 const nav = document.getElementById("main-nav");
 let menuOpened = false;
 
@@ -34,22 +35,24 @@ function mobileMenuHandler(el) {
 
 function openMobileMenu() {
   menuOpened = true;
+  hamburgerSvg.classList.add("hamburger-opened");
   nav.classList.add("main-nav--opened");
-  document.body.style.overflow = "hidden";
+  document.body.classList.add("body-fixed");
 }
 
 function closeMobileMenu() {
   menuOpened = false;
-  nav.classList.add("main-nav--closed"); 
+  nav.classList.add("main-nav--closed");
+  hamburgerSvg.classList.remove("hamburger-opened");
   nav.style.pointerEvents = "none";
-  hamburgerBtn.style.pointerEvents = "none"; 
-  setTimeout(()=>{
-   nav.classList.remove("main-nav--closed","main-nav--opened");
-   nav.style.pointerEvents = "auto";
-   hamburgerBtn.style.pointerEvents = "auto"; 
-  }, 500); 
-  
-  document.body.style.overflow = "auto";
+  hamburgerBtn.style.pointerEvents = "none";
+  setTimeout(() => {
+    nav.classList.remove("main-nav--closed", "main-nav--opened");
+    nav.style.pointerEvents = "auto";
+    hamburgerBtn.style.pointerEvents = "auto";
+  }, 500);
+
+  document.body.classList.remove("body-fixed");
 }
 
 function checkMobile() {

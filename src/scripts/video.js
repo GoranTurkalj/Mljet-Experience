@@ -1,7 +1,7 @@
 //Select play button
 const playBtn = document.getElementById("play-btn");
 
-//  This code loads the IFrame Player API code asynchronously.
+//  This code loads the Iframe Player API code asynchronously.
 let tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
@@ -54,7 +54,6 @@ playBtn.addEventListener("click", (event) => {
   onYouTubeIframeAPIReady();
   event.target.setAttribute("disabled", "disabled"); 
   setTimeout(()=>{
-   // event.target.style.pointerEvents = "auto"; 
     event.target.removeAttribute("disabled"); 
   }, 1500); 
  

@@ -1,7 +1,5 @@
 .banner-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexColumnCenter();
   position: relative; //because compass image is absolute
 
   background-image: linear-gradient(
@@ -22,9 +20,7 @@
 //Holds quote text and author name
 .quote {
   min-height: 14.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexColumnCenter();
   font-weight: $headBold;
   font-size: $fsQuote; //This will be used as basis for quote text and quote author, so they can scale in proportion
   color: $quoteTxtColor;
@@ -58,9 +54,7 @@
   padding: 0 2.5625rem; //41px
   margin-top: 8.02%; //9.625rem at 1920, scales accordingly on smaller screens by taking parent width %
   margin-bottom: 32.64%; //39.125rem at 1920,
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexColumnCenter();
   justify-content: space-between;
 }
 

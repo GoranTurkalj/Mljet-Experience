@@ -15,14 +15,12 @@
 }
 .news-section__food {
   height: 15rem;
-  display: flex;
-  justify-content: space-between;
+  @include flexSpaceB();
   margin-bottom: 2.25rem;
 }
 .news-section__stay {
   height: 30.75rem;
-  display: flex;
-  justify-content: space-between;
+  @include flexSpaceB();
 }
 
 //**************************************  MEDIA QUERIES **************************************//

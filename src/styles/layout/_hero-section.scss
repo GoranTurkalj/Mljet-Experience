@@ -1,19 +1,15 @@
 .hero-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexColumnCenter();
 }
 
 //Container for hero title and text
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexColumnCenter();
   width: 100%;
 }
 
 .hero__title {
-  max-width: 55.25rem; 
+  max-width: 55.25rem;
   color: $heroColor;
   font-size: $fsHero;
   line-height: $lhHero;
@@ -29,7 +25,7 @@
   margin-bottom: 8.25rem;
 }
 
-//CATEGORIES 
+//CATEGORIES
 
 .categories {
   display: flex;
@@ -48,10 +44,10 @@
 }
 
 .category:nth-of-type(1) div {
-  background-image: url("../assets/categories/where-to-eat.png");
+  background-image: url("../assets/categories/where-to-eat.jpg");
 }
 .category:nth-of-type(2) div {
-  background-image: url("../assets/categories/where-to-stay.png");
+  background-image: url("../assets/categories/where-to-stay.jpg");
 }
 .category:nth-of-type(3) div {
   background-image: url("../assets/categories/amusement.png");
@@ -113,11 +109,13 @@
 
 @media only screen and (max-width: 68.75rem) {
   .categories {
-   background-image: url("../assets/bg-graphics/bg-lines-opaque.png"), linear-gradient(
-      180deg,
-      rgba(1, 56, 84, 0) 0%,
-      #013854 15.78%,
-      #002233 100%);
+    background-image: url("../assets/bg-graphics/bg-lines-opaque.png"),
+      linear-gradient(
+        180deg,
+        rgba(1, 56, 84, 0) 0%,
+        #013854 15.78%,
+        #002233 100%
+      );
     background-size: 100% 120%, 100%;
     background-position: center, top;
     background-repeat: repeat, no-repeat;
@@ -144,9 +142,8 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-   
+
     padding: 15rem 0 6.1875rem 0;
-   
   }
 
   .category {
@@ -201,7 +198,6 @@
     padding: 15rem 1rem 6.1875rem 1rem;
     background-size: 150% 110%, 100%;
     background-position: 50% 0%, top;
-   
   }
 
   .category__image {

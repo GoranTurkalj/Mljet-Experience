@@ -1,3 +1,5 @@
+//navbar component
+
 .main-nav__list {
   display: flex;
   justify-content: space-between;
@@ -11,6 +13,11 @@
   border-bottom: 1px solid transparent;
   cursor: pointer;
   outline: none;
+  transition: all 150ms;
+  &:hover,
+  &:focus {
+    color: $heroPaleColor;
+  }
 }
 
 .navlink--lang {
@@ -94,6 +101,12 @@
     }
   }
 
+  //Controls body when mobile menu gets opened and closed
+  .body-fixed {
+    overflow-y: scroll;
+    position: fixed;
+  }
+
   .main-nav--opened {
     display: flex;
     animation: mobileMenuOpen 500ms ease-in-out forwards;
@@ -123,6 +136,8 @@
   }
 }
 
+//************ ANIMATIONS ***************** //
+
 @keyframes mobileMenuOpen {
   0% {
     transform: translateY(100%);
@@ -146,31 +161,3 @@
     border-radius: 70vw 70vw 0 0;
   }
 }
-
-//  .main-nav {
-//     background-image: linear-gradient(
-//         180deg,
-//         rgb(0, 34, 51),
-//         rgb(255, 255, 255)
-//       ),
-//       url("../assets/bg-graphics/bg-seafood.png");
-//     background-repeat: no-repeat;
-//     background-position: 100%, 10% 100%;
-//     background-size: 100%, 110%;
-//     background-blend-mode: darken;
-//     position: fixed;
-//     overflow-y: scroll;
-//     overflow-x: hidden;
-//     top: 8rem;
-//     left: 0;
-//     border-radius: 5vw 5vw 0 0;
-//     min-height: calc(100vh - 8rem);
-//     max-height: calc(100vh - 8rem);
-//     width: 100%;
-//     max-width: 100%;
-//     z-index: 10;
-
-//     &::-webkit-scrollbar {
-//       display: none;
-//     }
-//   }

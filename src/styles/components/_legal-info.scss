@@ -1,3 +1,5 @@
+//Legal information at the bottom 
+
 .legal {
   height: 3.75rem;
   width: 100%;
@@ -33,6 +35,9 @@
 .legal__statement--craft {
   justify-content: flex-end;
 }
+
+//************ MEDIA QUERIES ***********************//
+
 
 @media only screen and (max-width: 66.875rem) {
   .legal {

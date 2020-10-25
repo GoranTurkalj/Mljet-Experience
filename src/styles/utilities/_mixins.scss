@@ -18,3 +18,15 @@
   width: $lineWidth;
   border-top: $lineThickness $hrBorderStyle; //thickness is custom, but the border is solid and predefined color
 }
+
+
+@mixin flexColumnCenter() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flexSpaceB() {
+  display: flex; 
+  justify-content: space-between;
+}
