@@ -15,6 +15,12 @@
 
 @media only screen and (max-width: $tabletMedium) {
   .video-section {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(249, 244, 233, 0.87),
+      rgba(249, 244, 233, 0.87),
+    ),
+    url("../assets/bg-graphics/bg-seafood.png");
     background-position: 0% 0%;
     background-size: contain, 100%;
     
