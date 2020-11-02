@@ -1,18 +1,4 @@
 .slider-section {
-  margin-bottom: 6.125rem;
-}
-
-//********* MEDIA QUERIES ************** //
-
-@media only screen and (max-width: $tabletMedium) {
-  .slider-section {
-    //Background image added here also, to complement the background image of .video-section
-    background-image: linear-gradient(
-      to bottom,
-      rgba(249, 244, 233, 0.87),
-      rgb(255, 255,255)
-      
-    );
-    background-size: 100%;
-  }
+  padding-bottom: 6.125rem;
+  background-color: $bgMiddleTrans;
 }

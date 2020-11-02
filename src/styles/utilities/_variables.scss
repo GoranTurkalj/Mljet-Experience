@@ -9,6 +9,8 @@ $darkBgClr: rgba(0, 34, 51, 0.6); //Used on slider arrows and dropdown menu item
 $darkestBgClr: rgba(0, 34, 51, 0.9); //Used as hover on slider arrows
 $socialBgClr: #37343440; //Used directly in svg img for background, here only for reference
 $socialStrokeClr: #eee6d7ee; // This is footer background color on 93% opacity to aproximate stroke color for social icons since the svgs are not optimal, I cant use #ffffff at 25% opacity. This is just a reference - color is used directly in svg img code.
+$bgMiddle: #f9f4e9; 
+$bgMiddleTrans: rgba(250, 248, 242, 0.376); //Used in video,slider & banner sections for background-color
 
 
 //*******************  Button Colors *******************************//

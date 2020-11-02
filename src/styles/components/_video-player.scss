@@ -4,8 +4,10 @@
 .video-container {
   margin-top: 3.75rem;
   margin-bottom: 4.1875rem;
+  margin-bottom: 3.49vw;
   width: 82%;
   height: 59.0625rem; //945px;
+  
 }
 
 .video-player {
@@ -71,6 +73,16 @@
 }
 
 //********** MEDIA QUERIES **************//
+
+@media only screen and (min-width: 120.0625rem) {
+
+  .video-container {
+    height: 87%;
+  }
+
+}
+
+
 
 @media only screen and (max-width: $deskBig) {
   .video-container {

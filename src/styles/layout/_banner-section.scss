@@ -3,18 +3,17 @@
   position: relative; //because compass image is absolute
 
   background-image: linear-gradient(
-      180deg,
-      rgb(255, 255, 255) 30%,
-      rgb(245, 245, 245) 35%,
-      rgba(175, 245, 230, 0) 50%
+      rgba(255, 255, 255, 0) 10%,
+      rgb(250, 248, 242) 90%
     ),
     url("../assets/backgrounds/bg-bottom.jpg"),
     url("../assets/bg-graphics/bitmap-pattern-left-optimized.png");
 
   background-repeat: no-repeat;
   background-position: top, bottom, -12.8rem 59%;
-  background-size: 100% 100%, contain, 100% 40%;
+  background-size: 100% 28%, contain, 100% 40%;
   background-blend-mode: saturation, multiply, normal;
+  background-color: $bgMiddleTrans;
 }
 
 //Holds quote text and author name
@@ -121,6 +120,13 @@
 
 //***************  MEDIA QUERIES ****************** //
 
+//2340px
+@media only screen and (max-width: 146.25rem) {
+  .banner-section {
+    background-size: 100% 40%, contain, 100% 40%;
+  }
+}
+
 @media only screen and (max-width: $deskBig) {
   .quote {
     font-size: clamp(1.5rem, 4vw, $fsQuote);
@@ -138,6 +144,13 @@
   }
 }
 
+//1650px
+@media only screen and (max-width: 103.125rem) {
+  .banner-section {
+    background-size: 100% 51%, contain, 100% 40%;
+  }
+}
+
 @media only screen and (max-width: $deskSmall) {
   .quote {
     min-height: fit-content;
@@ -146,12 +159,7 @@
 
 @media only screen and (max-width: $tabletMedium) {
   .banner-section {
-    background-image: url("../assets/backgrounds/bg-bottom.jpg"),
-      url("../assets/bg-graphics/bitmap-pattern-left-optimized.png");
-
-    background-position: bottom, left bottom;
-    background-size: contain, 100% 40%;
-    background-blend-mode: multiply;
+    background-size: 100% 62%, contain, 100% 40%;
   }
 
   .quote__author {
@@ -175,7 +183,8 @@
 
 @media only screen and (max-width: $mobileMedium) {
   .banner-section {
-    background-size: contain, 140% 20%;
+    background-size: 100% 79%, contain, 140% 20%;
+    background-position: top, bottom, bottom;
   }
 
   .quote {
@@ -210,7 +219,6 @@
 }
 @media only screen and (max-width: $mobileSmall) {
   .banner-section {
-    background-position: bottom, bottom;
-    background-size: contain, contain;
+    background-size: 0%, contain, contain;
   }
 }

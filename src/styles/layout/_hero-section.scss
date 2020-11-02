@@ -77,6 +77,10 @@
 
 //***************  MEDIA QUERIES ****************** //
 
+@media only screen and (min-width: 1921px) {
+ 
+}
+
 @media only screen and (max-width: 118.75rem) {
   .hero__title {
     font-size: clamp(2.5rem, 4vw, $fsHero);

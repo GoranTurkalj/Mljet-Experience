@@ -11,6 +11,7 @@ const glide = new Glide(".glide", {
   animationDuration: 1200,
   gap: 0,
   breakpoints: {
+    
     1920: {
       perView: 1.98,
     },
